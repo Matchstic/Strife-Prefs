@@ -11,7 +11,7 @@
 		<key>icon</key>
 		<string>strifeprefsIcon.png</string>
 		<key>label</key>
-		<string>strifeprefs</string>
+		<string>Strife</string>
 		<key>isController</key>
 		<true/>
 	</dict>

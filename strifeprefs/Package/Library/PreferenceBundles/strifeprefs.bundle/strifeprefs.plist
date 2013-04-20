@@ -2,136 +2,99 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>title</key>
-	<string>strifeprefs</string>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>strifeprefsIcon.png</string>
+		<key>label</key>
+		<string>Strife</string>
+	</dict>
 	<key>items</key>
 	<array>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
-			<key>isStaticText</key>
+			<key>footerText</key>
+			<string>Respring for changes to take effect.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Theming</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>Theme</string>
+			<key>label</key>
+			<string>Main theme</string>
+			<key>validTitles</key>
+			<array>
+				<string>Dark</string>
+				<string>Light</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>Dark</string>
+				<string>Light</string>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>tilePageController</string>
+			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Use Preferences File To Get/Set Value</string>
-			<key>footerText</key>
-			<string>Example of how to get/set values directly from/to the preferences (plist) file by not calling any code (just how non-bundles do so).</string>
+			<string>Tiles</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Lockscreen</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>default</key>
-			<false/>
-			<key>key</key>
-			<string>SwitchExample</string>
-			<key>label</key>
-			<string>Switch</string>
-			<key>PostNotification</key>
-			<string>com.matchstick.strifeprefs.settingsChanged</string>
-			<key>defaults</key>
-			<string>com.matchstick.strifeprefs</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
 			<true/>
-			<key>label</key>
-			<string>Use Code To Get Value</string>
-			<key>footerText</key>
-			<string>Example of how to get values from code by sending messages to the bundle&apos;s principal class.</string>
-		</dict>
-		<dict>
-			<key>key</key>
-			<string>TemplateVersionExample</string>
-			<key>cell</key>
-			<string>PSTitleValueCell</string>
-			<key>get</key>
-			<string>getValueForSpecifier:</string>
-			<key>label</key>
-			<string>Template Version</string>
-		</dict>
-		<dict>
 			<key>defaults</key>
-			<string>/System/Library/CoreServices/SystemVersion</string>
-			<key>key</key>
-			<string>ProductVersion</string>
-			<key>cell</key>
-			<string>PSTitleValueCell</string>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info</string>
 			<key>get</key>
-			<string>getValueForSpecifier:</string>
+			<string>getLockscreenOn</string>
+			<key>key</key>
+			<string>ShowsLockscreen</string>
 			<key>label</key>
-			<string>OS Version</string>
-		</dict>
-		<dict>
-			<key>footerText</key>
-			<string>Example of how to get/set/use values from/to/in code by sending messages to the bundle&apos;s principal class.</string>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
-			<key>label</key>
-			<string>Use Code To Get/Set/Use Value</string>
-		</dict>
-		<dict>
+			<string>Enabled</string>
 			<key>set</key>
-			<string>setValue:forSpecifier:</string>
-			<key>get</key>
-			<string>getValueForSpecifier:</string>
-			<key>label</key>
-			<string>Text</string>
-			<key>PostNotification</key>
-			<string>com.matchstick.strifeprefs.settingsChanged</string>
-			<key>defaults</key>
-			<string>com.matchstick.strifeprefs</string>
-			<key>key</key>
-			<string>TextExample</string>
-			<key>cell</key>
-			<string>PSEditTextCell</string>
+			<string>setLockscreenOn:specifier:</string>
 		</dict>
 		<dict>
-			<key>footerText</key>
-			<string>Perform an action by sending messages to the bundle&apos;s principal class.</string>
 			<key>cell</key>
 			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
-			<key>label</key>
-			<string>Perform Action</string>
-		</dict>
-		<dict>
-			<key>action</key>
-			<string>followOnTwitter:</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>Follow Kokoabim</string>
-		</dict>
-		<dict>
-			<key>action</key>
-			<string>visitWebSite:</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>Visit iOSOpenDev.com</string>
-		</dict>
-		<dict>
-			<key>action</key>
-			<string>makeDonation:</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>Donate to iOSOpenDev</string>
-		</dict>
-		<dict>
 			<key>footerText</key>
-			<string>© 2013 __MyCompanyName__</string>
+			<string>Strife © EndFinity, unoffical preferences by matchstick (Matchstic)</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>respring:</string>
 			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
+			<string>PSButtonCell</string>
 			<key>label</key>
-			<string></string>
+			<string>Respring</string>
 		</dict>
 	</array>
+	<key>title</key>
+	<string>Strife</string>
 </dict>
 </plist>

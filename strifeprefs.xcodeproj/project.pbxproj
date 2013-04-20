@@ -28,8 +28,9 @@
 		C93DFAC21722E4DA00CEC1B0 /* strifeprefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = strifeprefs.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/strifeprefs.plist; sourceTree = "<group>"; };
 		C93DFAC31722E4DA00CEC1B0 /* strifeprefsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = strifeprefsIcon.png; path = Package/Library/PreferenceBundles/strifeprefs.bundle/strifeprefsIcon.png; sourceTree = "<group>"; };
 		C93DFAC41722E4DA00CEC1B0 /* strifeprefsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "strifeprefsIcon@2x.png"; path = "Package/Library/PreferenceBundles/strifeprefs.bundle/strifeprefsIcon@2x.png"; sourceTree = "<group>"; };
-		C93DFAC91722E4DA00CEC1B0 /* com.matchstick.strifeprefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.matchstick.strifeprefs.plist; path = Package/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist; sourceTree = "<group>"; };
 		C93DFACA1722E4DA00CEC1B0 /* strifeprefs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "strifeprefs-Prefix.pch"; sourceTree = "<group>"; };
+		C93DFAD01722F1AF00CEC1B0 /* Tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tiles.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Tiles.plist; sourceTree = "<group>"; };
+		C93DFAD11723009700CEC1B0 /* Main theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Main theme.plist"; path = "Package/Library/PreferenceBundles/strifeprefs.bundle/Main theme.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +90,6 @@
 			children = (
 				C93DFAB31722E4DA00CEC1B0 /* DEBIAN */,
 				C93DFABC1722E4DA00CEC1B0 /* Library */,
-				C93DFAC51722E4DA00CEC1B0 /* var */,
 			);
 			name = Package;
 			sourceTree = "<group>";
@@ -149,43 +149,13 @@
 		C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
+				C93DFAD11723009700CEC1B0 /* Main theme.plist */,
+				C93DFAD01722F1AF00CEC1B0 /* Tiles.plist */,
 				C93DFAC21722E4DA00CEC1B0 /* strifeprefs.plist */,
 				C93DFAC31722E4DA00CEC1B0 /* strifeprefsIcon.png */,
 				C93DFAC41722E4DA00CEC1B0 /* strifeprefsIcon@2x.png */,
 			);
 			name = "___PACKAGENAME___.bundle";
-			sourceTree = "<group>";
-		};
-		C93DFAC51722E4DA00CEC1B0 /* var */ = {
-			isa = PBXGroup;
-			children = (
-				C93DFAC61722E4DA00CEC1B0 /* mobile */,
-			);
-			name = var;
-			sourceTree = "<group>";
-		};
-		C93DFAC61722E4DA00CEC1B0 /* mobile */ = {
-			isa = PBXGroup;
-			children = (
-				C93DFAC71722E4DA00CEC1B0 /* Library */,
-			);
-			name = mobile;
-			sourceTree = "<group>";
-		};
-		C93DFAC71722E4DA00CEC1B0 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				C93DFAC81722E4DA00CEC1B0 /* Preferences */,
-			);
-			name = Library;
-			sourceTree = "<group>";
-		};
-		C93DFAC81722E4DA00CEC1B0 /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				C93DFAC91722E4DA00CEC1B0 /* com.matchstick.strifeprefs.plist */,
-			);
-			name = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

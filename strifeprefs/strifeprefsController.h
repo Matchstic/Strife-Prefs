@@ -14,10 +14,17 @@
 {
 }
 
-- (id)getValueForSpecifier:(PSSpecifier*)specifier;
-- (void)setValue:(id)value forSpecifier:(PSSpecifier*)specifier;
-- (void)followOnTwitter:(PSSpecifier*)specifier;
-- (void)visitWebSite:(PSSpecifier*)specifier;
-- (void)makeDonation:(PSSpecifier*)specifier;
+-(id)specifiers;
+-(void)setLockscreenOn:(id)value specifier:(id)specifier;
+-(IBAction) respring:(id)sender;
+-(id)getLockscreenOn:(PSSpecifier*)specifier;
 
+@end
+
+@interface tilePageController : PSListController
+-(id)specifiers;
+@end
+
+@interface mainThemePageController : PSListController
+-(id)specifiers;
 @end
