@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C93DFAAC1722E4DA00CEC1B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAB1722E4DA00CEC1B0 /* Foundation.framework */; };
+		C93DFAAE1722E4DA00CEC1B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */; };
+		C93DFAB01722E4DA00CEC1B0 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAF1722E4DA00CEC1B0 /* Preferences.framework */; };
+		C93DFABB1722E4DA00CEC1B0 /* strifeprefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93DFABA1722E4DA00CEC1B0 /* strifeprefsController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C93DFAA81722E4DA00CEC1B0 /* strifeprefs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = strifeprefs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93DFAAB1722E4DA00CEC1B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C93DFAAF1722E4DA00CEC1B0 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		C93DFAB41722E4DA00CEC1B0 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C93DFAB51722E4DA00CEC1B0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C93DFAB71722E4DA00CEC1B0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C93DFAB81722E4DA00CEC1B0 /* strifeprefs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "strifeprefs-Info.plist"; sourceTree = "<group>"; };
+		C93DFAB91722E4DA00CEC1B0 /* strifeprefsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strifeprefsController.h; sourceTree = "<group>"; };
+		C93DFABA1722E4DA00CEC1B0 /* strifeprefsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = strifeprefsController.m; sourceTree = "<group>"; };
+		C93DFABF1722E4DA00CEC1B0 /* strifeprefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = strifeprefs.plist; path = Package/Library/PreferenceLoader/Preferences/strifeprefs.plist; sourceTree = "<group>"; };
+		C93DFAC21722E4DA00CEC1B0 /* strifeprefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = strifeprefs.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/strifeprefs.plist; sourceTree = "<group>"; };
+		C93DFAC31722E4DA00CEC1B0 /* strifeprefsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = strifeprefsIcon.png; path = Package/Library/PreferenceBundles/strifeprefs.bundle/strifeprefsIcon.png; sourceTree = "<group>"; };
+		C93DFAC41722E4DA00CEC1B0 /* strifeprefsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "strifeprefsIcon@2x.png"; path = "Package/Library/PreferenceBundles/strifeprefs.bundle/strifeprefsIcon@2x.png"; sourceTree = "<group>"; };
+		C93DFAC91722E4DA00CEC1B0 /* com.matchstick.strifeprefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.matchstick.strifeprefs.plist; path = Package/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist; sourceTree = "<group>"; };
+		C93DFACA1722E4DA00CEC1B0 /* strifeprefs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "strifeprefs-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C93DFAA41722E4DA00CEC1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93DFAAC1722E4DA00CEC1B0 /* Foundation.framework in Frameworks */,
+				C93DFAAE1722E4DA00CEC1B0 /* UIKit.framework in Frameworks */,
+				C93DFAB01722E4DA00CEC1B0 /* Preferences.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C93DFA9E1722E4DA00CEC1B0 = {
+			isa = PBXGroup;
+			children = (
+				C93DFAB11722E4DA00CEC1B0 /* strifeprefs */,
+				C93DFAAA1722E4DA00CEC1B0 /* Frameworks */,
+				C93DFAA91722E4DA00CEC1B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C93DFAA91722E4DA00CEC1B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAA81722E4DA00CEC1B0 /* strifeprefs.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C93DFAAA1722E4DA00CEC1B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAAB1722E4DA00CEC1B0 /* Foundation.framework */,
+				C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */,
+				C93DFAAF1722E4DA00CEC1B0 /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C93DFAB11722E4DA00CEC1B0 /* strifeprefs */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAB91722E4DA00CEC1B0 /* strifeprefsController.h */,
+				C93DFABA1722E4DA00CEC1B0 /* strifeprefsController.m */,
+				C93DFAB21722E4DA00CEC1B0 /* Package */,
+				C93DFAB61722E4DA00CEC1B0 /* Supporting Files */,
+			);
+			path = strifeprefs;
+			sourceTree = "<group>";
+		};
+		C93DFAB21722E4DA00CEC1B0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAB31722E4DA00CEC1B0 /* DEBIAN */,
+				C93DFABC1722E4DA00CEC1B0 /* Library */,
+				C93DFAC51722E4DA00CEC1B0 /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C93DFAB31722E4DA00CEC1B0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAB41722E4DA00CEC1B0 /* control.txt */,
+				C93DFAB51722E4DA00CEC1B0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C93DFAB61722E4DA00CEC1B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAB71722E4DA00CEC1B0 /* PackageVersion.plist */,
+				C93DFAB81722E4DA00CEC1B0 /* strifeprefs-Info.plist */,
+				C93DFACA1722E4DA00CEC1B0 /* strifeprefs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C93DFABC1722E4DA00CEC1B0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFABD1722E4DA00CEC1B0 /* PreferenceLoader */,
+				C93DFAC01722E4DA00CEC1B0 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C93DFABD1722E4DA00CEC1B0 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFABE1722E4DA00CEC1B0 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		C93DFABE1722E4DA00CEC1B0 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFABF1722E4DA00CEC1B0 /* strifeprefs.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		C93DFAC01722E4DA00CEC1B0 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAC21722E4DA00CEC1B0 /* strifeprefs.plist */,
+				C93DFAC31722E4DA00CEC1B0 /* strifeprefsIcon.png */,
+				C93DFAC41722E4DA00CEC1B0 /* strifeprefsIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		C93DFAC51722E4DA00CEC1B0 /* var */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAC61722E4DA00CEC1B0 /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		C93DFAC61722E4DA00CEC1B0 /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAC71722E4DA00CEC1B0 /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		C93DFAC71722E4DA00CEC1B0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAC81722E4DA00CEC1B0 /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C93DFAC81722E4DA00CEC1B0 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C93DFAC91722E4DA00CEC1B0 /* com.matchstick.strifeprefs.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C93DFAA51722E4DA00CEC1B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C93DFAA71722E4DA00CEC1B0 /* strifeprefs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C93DFACD1722E4DA00CEC1B0 /* Build configuration list for PBXNativeTarget "strifeprefs" */;
+			buildPhases = (
+				C93DFAA31722E4DA00CEC1B0 /* Sources */,
+				C93DFAA41722E4DA00CEC1B0 /* Frameworks */,
+				C93DFAA51722E4DA00CEC1B0 /* Headers */,
+				C93DFAA61722E4DA00CEC1B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = strifeprefs;
+			productName = strifeprefs;
+			productReference = C93DFAA81722E4DA00CEC1B0 /* strifeprefs.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C93DFA9F1722E4DA00CEC1B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C93DFAA21722E4DA00CEC1B0 /* Build configuration list for PBXProject "strifeprefs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C93DFA9E1722E4DA00CEC1B0;
+			productRefGroup = C93DFAA91722E4DA00CEC1B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C93DFAA71722E4DA00CEC1B0 /* strifeprefs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C93DFAA61722E4DA00CEC1B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C93DFAA31722E4DA00CEC1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93DFABB1722E4DA00CEC1B0 /* strifeprefsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C93DFACB1722E4DA00CEC1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C93DFACC1722E4DA00CEC1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C93DFACE1722E4DA00CEC1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "strifeprefs/strifeprefs-Prefix.pch";
+				INFOPLIST_FILE = "strifeprefs/strifeprefs-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C93DFACF1722E4DA00CEC1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "strifeprefs/strifeprefs-Prefix.pch";
+				INFOPLIST_FILE = "strifeprefs/strifeprefs-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C93DFAA21722E4DA00CEC1B0 /* Build configuration list for PBXProject "strifeprefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93DFACB1722E4DA00CEC1B0 /* Debug */,
+				C93DFACC1722E4DA00CEC1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C93DFACD1722E4DA00CEC1B0 /* Build configuration list for PBXNativeTarget "strifeprefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93DFACE1722E4DA00CEC1B0 /* Debug */,
+				C93DFACF1722E4DA00CEC1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C93DFA9F1722E4DA00CEC1B0 /* Project object */;
+}
