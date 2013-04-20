@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Main theme</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>defaults</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info</string>
+			<key>cell</key>
+			<string>PSListItemCell</string>
+			<key>label</key>
+			<string>Dark</string>
+			<key>value</key>
+			<string>Dark</string>
+			<key>key</key>
+			<string>Theme</string>
+		</dict>
+		<dict>
+			<key>defaults</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info</string>
+			<key>cell</key>
+			<string>PSListItemCell</string>
+			<key>label</key>
+			<string>Light</string>
+			<key>value</key>
+			<string>Light</string>
+			<key>key</key>
+			<string>Theme</string>
+		</dict>
+	</array>
+</dict>
+</plist>
