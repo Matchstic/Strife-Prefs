@@ -2,7 +2,7 @@
 //  strifeprefsController.m
 //  strifeprefs
 //
-//  Created by Matt Clarke on 28/03/2013.
+//  Created by Matt Clarke (Matchstic, matchstick) on 28/03/2013.
 //
 
 #import "strifeprefsController.h"
@@ -12,17 +12,22 @@
 static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.plist";
 
 @implementation strifeprefsController
+// Load up the cells from the plist
 -(id)specifiers {
 	if(_specifiers == nil) {
         _specifiers = [[self loadSpecifiersFromPlistName:@"strifeprefs" target:self] retain];
     }
     return _specifiers;
 }
+
+// Hack to display correct value on the lockscreen enabled cell
 -(void)viewDidAppear:(BOOL)arg1 {
+    // Load correct value
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsFile];
     BOOL lockscreen = [[dict objectForKey:@"ShowsLockscreen"] boolValue];
     [dict release];
     
+    // Set correct value in a file Preferences can load up the bool from
     NSMutableDictionary *plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist"];
     [plistDict setValue:[NSNumber numberWithBool:lockscreen] forKey:@"ShowsLockscreen"];
     [plistDict writeToFile:@"/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist" atomically:YES];
@@ -31,7 +36,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     [self reloadSpecifiers];
 }
 
-// Hiding/showing cells when on/off
+// Correctly set ShowsLockscreen in the Info.plist
 -(void)setLockscreenOn:(id)value specifier:(id)specifier {
 	[self setPreferenceValue:value specifier:specifier];
 	NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsFile];
@@ -45,11 +50,13 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     [dict release];
 }
 
+// backend to respring button
 -(IBAction)respring:(id)sender {
     setuid(0);
     system("killall SpringBoard");
 }
 
+// not a clue if this is even needed now!
 -(BOOL)getLockscreenOn {
     BOOL lockscreen = nil;
     
@@ -60,6 +67,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     return lockscreen;
 }
 
+// Hack to get current tile colour to display on the PSLinkListCell
 -(NSString *)tileColour {
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsFile];
     NSString *colour = [dict objectForKey:@"AccentColorHex"];
@@ -123,6 +131,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     return _specifiers;
 }
 
+// not a clue if this is even needed now!
 -(void)setHexColour:(id)value specifier:(id)specifier {
     NSLog(@"Strife_prefs: Hex value is %@", value);
 }
@@ -146,13 +155,16 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 }
 
 -(void)viewDidAppear:(BOOL)arg1 {
+    // Make sure that any changes are reflected when moving back in preferences
     [self reloadSpecifiers];
 }
 
+// Series of hacks to get current lock app display names - needed for the PSLinkListCell's again
 -(NSString *)lockappOne {
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsFile];
     NSString *bundleID = [dict objectForKey:@"LockApp1"];
     
+    // Use AppList to get a list of installed apps, and get the displayID from that
     ALApplicationList *al = [ALApplicationList sharedApplicationList];
     NSString *appName = [al valueForKey:@"displayName" forDisplayIdentifier:bundleID];
     

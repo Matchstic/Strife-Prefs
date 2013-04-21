@@ -2,7 +2,7 @@
 //  strifeprefsController.h
 //  strifeprefs
 //
-//  Created by Matt Clarke on 20/04/2013.
+//  Created by Matt Clarke (Matchstic, matchstick) on 20/04/2013.
 //
 
 #import <Foundation/Foundation.h>
