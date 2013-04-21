@@ -1,17 +1,17 @@
 Package: com.matchstick.strifeprefs
-Name: strifeprefs
+Name: Strife Preferences
 Version: 1.0-1
-Description: 
-Section: PreferenceBundles
-Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader
+Description: This is a preference pane for EndFinity's fantastic theme, Strife. 
+Section: Preference Bundles
+Depends: firmware (>= 6.0), mobilesubstrate, preferenceloader, com.modmyi.strifebeta, applist
 Conflicts: 
 Replaces: 
 Priority: optional
 Architecture: iphoneos-arm
-Author: Matt Clarke
+Author: matchstick
 dev: 
 Homepage: 
 Depiction: 
 Maintainer: 
-Icon: 
+Icon: file:///Library/PreferenceBundles/strifeprefs.bundle/strifeprefsIcon.png
 

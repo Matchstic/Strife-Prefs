@@ -49,13 +49,15 @@
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSLinkCell</string>
+			<string>PSLinkListCell</string>
 			<key>detail</key>
 			<string>tilePageController</string>
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Tiles</string>
+			<string>Tile colour</string>
+			<key>get</key>
+			<string>tileColour</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -69,9 +71,7 @@
 			<key>default</key>
 			<true/>
 			<key>defaults</key>
-			<string>/var/mobile/Library/DreamBoard/Strife/Info</string>
-			<key>get</key>
-			<string>getLockscreenOn</string>
+			<string>com.matchstick.strifeprefs</string>
 			<key>key</key>
 			<string>ShowsLockscreen</string>
 			<key>label</key>
@@ -81,9 +81,19 @@
 		</dict>
 		<dict>
 			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>lockAppPageController</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Notifications</string>
+		</dict>
+		<dict>
+			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Strife © EndFinity, unoffical preferences by matchstick (Matchstic)</string>
+			<string>Strife © EndFinity, preferences by matchstick (Matchstic)</string>
 		</dict>
 		<dict>
 			<key>action</key>

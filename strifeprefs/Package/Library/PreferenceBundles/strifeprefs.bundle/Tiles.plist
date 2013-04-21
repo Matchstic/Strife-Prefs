@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>title</key>
-	<string>Tiles</string>
+	<string>Tile colour</string>
 	<key>items</key>
 	<array>
 		<dict>
@@ -71,6 +71,10 @@
 			<string>PSGroupCell</string>
 		</dict>
 		<dict>
+			<key>noAutoCorrect</key>
+			<true/>
+			<key>default</key>
+			<string></string>
 			<key>alignment</key>
 			<string>1</string>
 			<key>cell</key>

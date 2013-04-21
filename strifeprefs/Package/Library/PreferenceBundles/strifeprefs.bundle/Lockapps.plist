@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Notifications</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Configure which app&apos;s notifications are displayed on the lockscreen.</string>
+		</dict>
+		<dict>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALChangeNotification</key>
+			<string></string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = TRUE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>System Applications</string>
+				</dict>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = FALSE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>User Applications</string>
+				</dict>
+			</array>
+			<key>ALSettingsKey</key>
+			<string>LockApp1</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Lock App 1</string>
+			<key>get</key>
+			<string>lockappOne</string>
+		</dict>
+		<dict>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALChangeNotification</key>
+			<string></string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = TRUE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>System Applications</string>
+				</dict>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = FALSE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>User Applications</string>
+				</dict>
+			</array>
+			<key>ALSettingsKey</key>
+			<string>LockApp2</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Lock App 2</string>
+			<key>get</key>
+			<string>lockappTwo</string>
+		</dict>
+		<dict>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALChangeNotification</key>
+			<string></string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = TRUE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>System Applications</string>
+				</dict>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = FALSE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>User Applications</string>
+				</dict>
+			</array>
+			<key>ALSettingsKey</key>
+			<string>LockApp3</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Lock App 3</string>
+			<key>get</key>
+			<string>lockappThree</string>
+		</dict>
+		<dict>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALChangeNotification</key>
+			<string></string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = TRUE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>System Applications</string>
+				</dict>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = FALSE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>User Applications</string>
+				</dict>
+			</array>
+			<key>ALSettingsKey</key>
+			<string>LockApp4</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Lock App 4</string>
+			<key>get</key>
+			<string>lockappFour</string>
+		</dict>
+		<dict>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALChangeNotification</key>
+			<string></string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = TRUE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>System Applications</string>
+				</dict>
+				<dict>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>(isSystemApplication = FALSE) AND NOT (tags contains &apos;no-strife&apos;)</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>title</key>
+					<string>User Applications</string>
+				</dict>
+			</array>
+			<key>ALSettingsKey</key>
+			<string>LockApp5</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/DreamBoard/Strife/Info.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Lock App 5</string>
+			<key>get</key>
+			<string>lockappFive</string>
+		</dict>
+	</array>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>label</key>
+		<string>Notifications</string>
+	</dict>
+</dict>
+</plist>

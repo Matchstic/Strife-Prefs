@@ -11,6 +11,8 @@
 		C93DFAAE1722E4DA00CEC1B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */; };
 		C93DFAB01722E4DA00CEC1B0 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAF1722E4DA00CEC1B0 /* Preferences.framework */; };
 		C93DFABB1722E4DA00CEC1B0 /* strifeprefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93DFABA1722E4DA00CEC1B0 /* strifeprefsController.m */; };
+		C96C12A21723FDCF0092BD64 /* ALApplicationList.h in Headers */ = {isa = PBXBuildFile; fileRef = C96C12A11723FDCF0092BD64 /* ALApplicationList.h */; };
+		C96C12A41723FEAB0092BD64 /* libapplist.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96C12A31723FEAB0092BD64 /* libapplist.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +20,6 @@
 		C93DFAAB1722E4DA00CEC1B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C93DFAAF1722E4DA00CEC1B0 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
-		C93DFAB41722E4DA00CEC1B0 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		C93DFAB51722E4DA00CEC1B0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		C93DFAB71722E4DA00CEC1B0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		C93DFAB81722E4DA00CEC1B0 /* strifeprefs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "strifeprefs-Info.plist"; sourceTree = "<group>"; };
@@ -31,6 +32,9 @@
 		C93DFACA1722E4DA00CEC1B0 /* strifeprefs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "strifeprefs-Prefix.pch"; sourceTree = "<group>"; };
 		C93DFAD01722F1AF00CEC1B0 /* Tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tiles.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Tiles.plist; sourceTree = "<group>"; };
 		C93DFAD11723009700CEC1B0 /* Main theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Main theme.plist"; path = "Package/Library/PreferenceBundles/strifeprefs.bundle/Main theme.plist"; sourceTree = "<group>"; };
+		C96C12A01723F50B0092BD64 /* Lockapps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Lockapps.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Lockapps.plist; sourceTree = "<group>"; };
+		C96C12A11723FDCF0092BD64 /* ALApplicationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALApplicationList.h; sourceTree = "<group>"; };
+		C96C12A31723FEAB0092BD64 /* libapplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libapplist.dylib; path = ../../../../../opt/iOSOpenDev/lib/libapplist.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96C12A41723FEAB0092BD64 /* libapplist.dylib in Frameworks */,
 				C93DFAAC1722E4DA00CEC1B0 /* Foundation.framework in Frameworks */,
 				C93DFAAE1722E4DA00CEC1B0 /* UIKit.framework in Frameworks */,
 				C93DFAB01722E4DA00CEC1B0 /* Preferences.framework in Frameworks */,
@@ -50,6 +55,7 @@
 		C93DFA9E1722E4DA00CEC1B0 = {
 			isa = PBXGroup;
 			children = (
+				C96C12A31723FEAB0092BD64 /* libapplist.dylib */,
 				C93DFAB11722E4DA00CEC1B0 /* strifeprefs */,
 				C93DFAAA1722E4DA00CEC1B0 /* Frameworks */,
 				C93DFAA91722E4DA00CEC1B0 /* Products */,
@@ -77,6 +83,7 @@
 		C93DFAB11722E4DA00CEC1B0 /* strifeprefs */ = {
 			isa = PBXGroup;
 			children = (
+				C96C12A11723FDCF0092BD64 /* ALApplicationList.h */,
 				C93DFAB91722E4DA00CEC1B0 /* strifeprefsController.h */,
 				C93DFABA1722E4DA00CEC1B0 /* strifeprefsController.m */,
 				C93DFAB21722E4DA00CEC1B0 /* Package */,
@@ -97,7 +104,6 @@
 		C93DFAB31722E4DA00CEC1B0 /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				C93DFAB41722E4DA00CEC1B0 /* control.txt */,
 				C93DFAB51722E4DA00CEC1B0 /* control */,
 			);
 			name = DEBIAN;
@@ -149,6 +155,7 @@
 		C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
+				C96C12A01723F50B0092BD64 /* Lockapps.plist */,
 				C93DFAD11723009700CEC1B0 /* Main theme.plist */,
 				C93DFAD01722F1AF00CEC1B0 /* Tiles.plist */,
 				C93DFAC21722E4DA00CEC1B0 /* strifeprefs.plist */,
@@ -165,6 +172,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96C12A21723FDCF0092BD64 /* ALApplicationList.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,10 @@
 				GCC_PREFIX_HEADER = "strifeprefs/strifeprefs-Prefix.pch";
 				INFOPLIST_FILE = "strifeprefs/strifeprefs-Info.plist";
 				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
@@ -332,6 +344,10 @@
 				GCC_PREFIX_HEADER = "strifeprefs/strifeprefs-Prefix.pch";
 				INFOPLIST_FILE = "strifeprefs/strifeprefs-Info.plist";
 				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
@@ -363,6 +379,7 @@
 				C93DFACF1722E4DA00CEC1B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
