@@ -32,6 +32,7 @@
 		C93DFACA1722E4DA00CEC1B0 /* strifeprefs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "strifeprefs-Prefix.pch"; sourceTree = "<group>"; };
 		C93DFAD01722F1AF00CEC1B0 /* Tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tiles.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Tiles.plist; sourceTree = "<group>"; };
 		C93DFAD11723009700CEC1B0 /* Main theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Main theme.plist"; path = "Package/Library/PreferenceBundles/strifeprefs.bundle/Main theme.plist"; sourceTree = "<group>"; };
+		C947585E1725A76E00C560C0 /* backup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = backup.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/backup.plist; sourceTree = "<group>"; };
 		C96C12A01723F50B0092BD64 /* Lockapps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Lockapps.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Lockapps.plist; sourceTree = "<group>"; };
 		C96C12A11723FDCF0092BD64 /* ALApplicationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALApplicationList.h; sourceTree = "<group>"; };
 		C96C12A31723FEAB0092BD64 /* libapplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libapplist.dylib; path = ../../../../../opt/iOSOpenDev/lib/libapplist.dylib; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
+				C947585E1725A76E00C560C0 /* backup.plist */,
 				C96C12A01723F50B0092BD64 /* Lockapps.plist */,
 				C93DFAD11723009700CEC1B0 /* Main theme.plist */,
 				C93DFAD01722F1AF00CEC1B0 /* Tiles.plist */,

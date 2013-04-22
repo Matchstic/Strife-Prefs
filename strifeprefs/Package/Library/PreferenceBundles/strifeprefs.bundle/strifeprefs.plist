@@ -92,6 +92,20 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>backupPageController</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Backup/Restore</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 			<key>footerText</key>
 			<string>Strife © EndFinity, preferences by matchstick (Matchstic)</string>
 		</dict>

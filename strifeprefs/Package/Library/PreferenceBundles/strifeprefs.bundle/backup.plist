@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Backup/Restore</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Back up your preferences before updating Strife.</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>backUpPrefs</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Backup Preferences</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>restorePrefs</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Restore Preferences</string>
+		</dict>
+	</array>
+</dict>
+</plist>

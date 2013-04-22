@@ -212,3 +212,81 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     return appName;
 }
 @end
+
+@implementation backupPageController
+-(id)specifiers {
+	if(_specifiers == nil) {
+        _specifiers = [[self loadSpecifiersFromPlistName:@"backup" target:self] retain];
+    }
+    return _specifiers;
+}
+
+-(void)backUpPrefs {
+    // Copy Info.plist and Tiles.plist to Application Support/strifeprefs
+    NSFileManager *fileManger=[NSFileManager defaultManager];
+    NSError *error;
+    
+    NSString *infoPlistDest= @"/Library/Application Support/strifeprefs/Info.plist";
+    NSString *tilesPlistDest= @"/Library/Application Support/strifeprefs/Tiles.plist";
+    
+    NSString *infoPlistSource = @"/var/mobile/Library/DreamBoard/Strife/Info.plist";
+    NSString *tilesPlistSource = @"/var/mobile/Library/DreamBoard/Strife/Tiles.plist";
+    
+    [fileManger removeItemAtPath:infoPlistDest error:&error];
+    [fileManger removeItemAtPath:tilesPlistDest error:&error];
+    
+    [fileManger copyItemAtPath:infoPlistSource toPath:infoPlistDest error:&error];
+    [fileManger copyItemAtPath:tilesPlistSource toPath:tilesPlistDest error:&error];
+    
+    [fileManger release];
+    
+    // Display alert to say completed
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Completed"
+                                                    message:@"Backup of Strife preferences completed, remember to press Restore after updating Strife."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
+-(void)restorePrefs {
+    // Copy Info.plist and Tiles.plist to Strife folder
+    NSFileManager *fileManger=[NSFileManager defaultManager];
+    NSError *error;
+    
+    NSString *infoPlistSource= @"/Library/Application Support/strifeprefs/Info.plist";
+    NSString *tilesPlistSource= @"/Library/Application Support/strifeprefs/Tiles.plist";
+    
+    NSString *infoPlistDest = @"/var/mobile/Library/DreamBoard/Strife/Info.plist";
+    NSString *tilesPlistDest = @"/var/mobile/Library/DreamBoard/Strife/Tiles.plist";
+    
+    if ([fileManger fileExistsAtPath:infoPlistSource ] == YES) {
+        [fileManger removeItemAtPath:infoPlistDest error:&error];
+        [fileManger removeItemAtPath:tilesPlistDest error:&error];
+        
+        [fileManger copyItemAtPath:infoPlistSource toPath:infoPlistDest error:&error];
+        [fileManger copyItemAtPath:tilesPlistSource toPath:tilesPlistDest error:&error];
+        
+        // Display alert to say completed
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Completed"
+                                                        message:@"Restore of Strife preferences completed, respring to show the changes."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        
+    } else {
+        // Display alert to say failed
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed"
+                                                        message:@"Restore failed, there's no backup available to restore from."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    [fileManger release];
+}
+@end

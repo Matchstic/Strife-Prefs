@@ -27,6 +27,12 @@
 -(id)specifiers;
 @end
 
+@interface backupPageController : PSListController
+-(id)specifiers;
+-(void)restorePrefs;
+-(void)backUpPrefs;
+@end
+
 @interface lockAppPageController : PSListController
 -(id)specifiers;
 -(void)viewDidAppear:(BOOL)arg1;
