@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>title</key>
-	<string>Main theme</string>
+	<string>TITLE</string>
 	<key>items</key>
 	<array>
 		<dict>
@@ -12,7 +12,7 @@
 			<key>cell</key>
 			<string>PSListItemCell</string>
 			<key>label</key>
-			<string>Dark</string>
+			<string>DARK</string>
 			<key>value</key>
 			<string>Dark</string>
 			<key>key</key>
@@ -24,7 +24,7 @@
 			<key>cell</key>
 			<string>PSListItemCell</string>
 			<key>label</key>
-			<string>Light</string>
+			<string>LIGHT</string>
 			<key>value</key>
 			<string>Light</string>
 			<key>key</key>

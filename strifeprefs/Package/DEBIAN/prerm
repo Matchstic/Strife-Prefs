@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [ -e '/Library/Application Support/strifeprefs/Info.plist' ]
-  then
-    echo "Removing preferences backup..."
-    rm -f '/Library/Application Support/strifeprefs/Info.plist'
-    rm -f '/Library/Application Support/strifeprefs/Tiles.plist'
-    
-fi

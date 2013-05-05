@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>title</key>
-	<string>Backup/Restore</string>
+	<string>TITLE</string>
 	<key>items</key>
 	<array>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>PREF_LABEL</string>
 			<key>footerText</key>
-			<string>Back up your preferences before updating Strife.</string>
+			<string>PREF_FOOTER</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -18,7 +20,7 @@
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>Backup Preferences</string>
+			<string>BACKUP_PREFS_BUTTON</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -26,7 +28,35 @@
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>Restore Preferences</string>
+			<string>RESTORE_PREFS_BUTTON</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>TILES_LABEL</string>
+			<key>footerText</key>
+			<string>TILES_FOOTER</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>backUpTiles</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>BACKUP_TILES_BUTTON</string>
+		</dict>
+		<dict>
+			<key>detail</key>
+			<string>restoreTilesController</string>
+			<key>isController</key>
+			<true/>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>RESTORE_TILES_BUTTON</string>
+			<key>alignment</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 </dict>

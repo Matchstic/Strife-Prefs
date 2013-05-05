@@ -1,0 +1,33 @@
+/*
+ Tiles.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+*/
+
+"TITLE" = "Tile colour";
+"FOOTER" = "These are the default Windows Phone 8 colours.";
+"COLOURS" = "Colours";
+"LIME" = "Lime";
+"GREEN" = "Green";
+"EMERALD" = "Emerald";
+"TEAL" = "Teal";
+"CYAN" = "Cyan";
+"COBALT" = "Cobalt";
+"INDIGO" = "Indigo";
+"VIOLET" = "Violet";
+"PINK" = "Pink";
+"MAGENTA" = "Magenta";
+"CRIMSON" = "Crimson";
+"RED" = "Red";
+"ORANGE" = "Orange";
+"AMBER" = "Amber";
+"YELLOW" = "Yellow";
+"BROWN" = "Brown";
+"OLIVE" = "Olive";
+"STEEL" = "Steel";
+"MAUVE" = "Mauve";
+"TAUPE" = "Taupe";
+"TILE_OR_HEX" = "Choose your tile colour, or specify a custom hex value.";
+"CUSTOM_HEX_CELL" = "Custom hex colour";

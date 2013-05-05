@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92B59A8172BFAC10062A7CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92B59A7172BFAC10062A7CE /* QuartzCore.framework */; };
 		C93DFAAC1722E4DA00CEC1B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAB1722E4DA00CEC1B0 /* Foundation.framework */; };
 		C93DFAAE1722E4DA00CEC1B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */; };
 		C93DFAB01722E4DA00CEC1B0 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93DFAAF1722E4DA00CEC1B0 /* Preferences.framework */; };
 		C93DFABB1722E4DA00CEC1B0 /* strifeprefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93DFABA1722E4DA00CEC1B0 /* strifeprefsController.m */; };
+		C9409A3D172B3E5F00022F29 /* ChooseRestoreTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = C9409A3A172B3E5F00022F29 /* ChooseRestoreTiles.m */; };
+		C9409A3E172B3E5F00022F29 /* RestoreTileCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C9409A3B172B3E5F00022F29 /* RestoreTileCell.h */; };
+		C9409A3F172B3E5F00022F29 /* RestoreTileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9409A3C172B3E5F00022F29 /* RestoreTileCell.m */; };
+		C9409A41172B482100022F29 /* SpringBoardServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9409A40172B482100022F29 /* SpringBoardServices.framework */; };
+		C95F269F17289C1F00F842BE /* UIProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C95F269E17289C1F00F842BE /* UIProgressHUD.h */; };
+		C9602EEC17294725001A071A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9602EEB17294725001A071A /* CoreGraphics.framework */; };
 		C96C12A21723FDCF0092BD64 /* ALApplicationList.h in Headers */ = {isa = PBXBuildFile; fileRef = C96C12A11723FDCF0092BD64 /* ALApplicationList.h */; };
 		C96C12A41723FEAB0092BD64 /* libapplist.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96C12A31723FEAB0092BD64 /* libapplist.dylib */; };
+		C9CF74E3172C98D30090725C /* ChooseRestoreTiles.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CF74E2172C98D30090725C /* ChooseRestoreTiles.h */; };
+		C9CF74E5172C9F800090725C /* PSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CF74E4172C9F800090725C /* PSViewController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C92B59A7172BFAC10062A7CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C93DFAA81722E4DA00CEC1B0 /* strifeprefs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = strifeprefs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93DFAAB1722E4DA00CEC1B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -32,10 +42,31 @@
 		C93DFACA1722E4DA00CEC1B0 /* strifeprefs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "strifeprefs-Prefix.pch"; sourceTree = "<group>"; };
 		C93DFAD01722F1AF00CEC1B0 /* Tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tiles.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Tiles.plist; sourceTree = "<group>"; };
 		C93DFAD11723009700CEC1B0 /* Main theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Main theme.plist"; path = "Package/Library/PreferenceBundles/strifeprefs.bundle/Main theme.plist"; sourceTree = "<group>"; };
+		C9409A3A172B3E5F00022F29 /* ChooseRestoreTiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseRestoreTiles.m; sourceTree = "<group>"; };
+		C9409A3B172B3E5F00022F29 /* RestoreTileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreTileCell.h; sourceTree = "<group>"; };
+		C9409A3C172B3E5F00022F29 /* RestoreTileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreTileCell.m; sourceTree = "<group>"; };
+		C9409A40172B482100022F29 /* SpringBoardServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpringBoardServices.framework; path = System/Library/PrivateFrameworks/SpringBoardServices.framework; sourceTree = SDKROOT; };
 		C947585E1725A76E00C560C0 /* backup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = backup.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/backup.plist; sourceTree = "<group>"; };
+		C95F269E17289C1F00F842BE /* UIProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressHUD.h; sourceTree = "<group>"; };
+		C9602EEB17294725001A071A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C96C12A01723F50B0092BD64 /* Lockapps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Lockapps.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Lockapps.plist; sourceTree = "<group>"; };
 		C96C12A11723FDCF0092BD64 /* ALApplicationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALApplicationList.h; sourceTree = "<group>"; };
 		C96C12A31723FEAB0092BD64 /* libapplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libapplist.dylib; path = ../../../../../opt/iOSOpenDev/lib/libapplist.dylib; sourceTree = "<group>"; };
+		C9C1A2D51736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = backup.strings; sourceTree = "<group>"; };
+		C9C1A2D71736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Lockapps.strings; sourceTree = "<group>"; };
+		C9C1A2D91736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = "Main theme.strings"; sourceTree = "<group>"; };
+		C9C1A2DB1736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = RestoreTiles.strings; sourceTree = "<group>"; };
+		C9C1A2DD1736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = strifeprefs.strings; sourceTree = "<group>"; };
+		C9C1A2DF1736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Tiles.strings; sourceTree = "<group>"; };
+		C9CF74E1172C97730090725C /* RestoreTiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = RestoreTiles.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/RestoreTiles.plist; sourceTree = "<group>"; };
+		C9CF74E2172C98D30090725C /* ChooseRestoreTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseRestoreTiles.h; sourceTree = "<group>"; };
+		C9CF74E4172C9F800090725C /* PSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		C9DA64731736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = backup.strings; sourceTree = "<group>"; };
+		C9DA64751736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Lockapps.strings; sourceTree = "<group>"; };
+		C9DA64771736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Main theme.strings"; sourceTree = "<group>"; };
+		C9DA64791736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = RestoreTiles.strings; sourceTree = "<group>"; };
+		C9DA647B1736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = strifeprefs.strings; sourceTree = "<group>"; };
+		C9DA647D1736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Tiles.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92B59A8172BFAC10062A7CE /* QuartzCore.framework in Frameworks */,
+				C9409A41172B482100022F29 /* SpringBoardServices.framework in Frameworks */,
+				C9602EEC17294725001A071A /* CoreGraphics.framework in Frameworks */,
 				C96C12A41723FEAB0092BD64 /* libapplist.dylib in Frameworks */,
 				C93DFAAC1722E4DA00CEC1B0 /* Foundation.framework in Frameworks */,
 				C93DFAAE1722E4DA00CEC1B0 /* UIKit.framework in Frameworks */,
@@ -56,6 +90,9 @@
 		C93DFA9E1722E4DA00CEC1B0 = {
 			isa = PBXGroup;
 			children = (
+				C92B59A7172BFAC10062A7CE /* QuartzCore.framework */,
+				C9409A40172B482100022F29 /* SpringBoardServices.framework */,
+				C9602EEB17294725001A071A /* CoreGraphics.framework */,
 				C96C12A31723FEAB0092BD64 /* libapplist.dylib */,
 				C93DFAB11722E4DA00CEC1B0 /* strifeprefs */,
 				C93DFAAA1722E4DA00CEC1B0 /* Frameworks */,
@@ -84,6 +121,12 @@
 		C93DFAB11722E4DA00CEC1B0 /* strifeprefs */ = {
 			isa = PBXGroup;
 			children = (
+				C9CF74E4172C9F800090725C /* PSViewController.h */,
+				C9CF74E2172C98D30090725C /* ChooseRestoreTiles.h */,
+				C9409A3A172B3E5F00022F29 /* ChooseRestoreTiles.m */,
+				C9409A3B172B3E5F00022F29 /* RestoreTileCell.h */,
+				C9409A3C172B3E5F00022F29 /* RestoreTileCell.m */,
+				C95F269E17289C1F00F842BE /* UIProgressHUD.h */,
 				C96C12A11723FDCF0092BD64 /* ALApplicationList.h */,
 				C93DFAB91722E4DA00CEC1B0 /* strifeprefsController.h */,
 				C93DFABA1722E4DA00CEC1B0 /* strifeprefsController.m */,
@@ -156,6 +199,9 @@
 		C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
+				C9DA64711736FB3D00DE0315 /* en.lproj */,
+				C9C1A2D11736C27500C3EFA3 /* English.lproj */,
+				C9CF74E1172C97730090725C /* RestoreTiles.plist */,
 				C947585E1725A76E00C560C0 /* backup.plist */,
 				C96C12A01723F50B0092BD64 /* Lockapps.plist */,
 				C93DFAD11723009700CEC1B0 /* Main theme.plist */,
@@ -167,6 +213,34 @@
 			name = "___PACKAGENAME___.bundle";
 			sourceTree = "<group>";
 		};
+		C9C1A2D11736C27500C3EFA3 /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C9C1A2D41736C9AD00C3EFA3 /* backup.strings */,
+				C9C1A2D61736C9AD00C3EFA3 /* Lockapps.strings */,
+				C9C1A2D81736C9AD00C3EFA3 /* Main theme.strings */,
+				C9C1A2DA1736C9AD00C3EFA3 /* RestoreTiles.strings */,
+				C9C1A2DC1736C9AD00C3EFA3 /* strifeprefs.strings */,
+				C9C1A2DE1736C9AD00C3EFA3 /* Tiles.strings */,
+			);
+			name = English.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/English.lproj;
+			sourceTree = "<group>";
+		};
+		C9DA64711736FB3D00DE0315 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA64721736FB3D00DE0315 /* backup.strings */,
+				C9DA64741736FB3D00DE0315 /* Lockapps.strings */,
+				C9DA64761736FB3D00DE0315 /* Main theme.strings */,
+				C9DA64781736FB3D00DE0315 /* RestoreTiles.strings */,
+				C9DA647A1736FB3D00DE0315 /* strifeprefs.strings */,
+				C9DA647C1736FB3D00DE0315 /* Tiles.strings */,
+			);
+			name = en.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/en.lproj;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -175,6 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96C12A21723FDCF0092BD64 /* ALApplicationList.h in Headers */,
+				C95F269F17289C1F00F842BE /* UIProgressHUD.h in Headers */,
+				C9409A3E172B3E5F00022F29 /* RestoreTileCell.h in Headers */,
+				C9CF74E3172C98D30090725C /* ChooseRestoreTiles.h in Headers */,
+				C9CF74E5172C9F800090725C /* PSViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +291,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = C93DFA9E1722E4DA00CEC1B0;
 			productRefGroup = C93DFAA91722E4DA00CEC1B0 /* Products */;
@@ -246,10 +325,111 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93DFABB1722E4DA00CEC1B0 /* strifeprefsController.m in Sources */,
+				C9409A3D172B3E5F00022F29 /* ChooseRestoreTiles.m in Sources */,
+				C9409A3F172B3E5F00022F29 /* RestoreTileCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9C1A2D41736C9AD00C3EFA3 /* backup.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C1A2D51736C9AD00C3EFA3 /* English */,
+			);
+			name = backup.strings;
+			sourceTree = "<group>";
+		};
+		C9C1A2D61736C9AD00C3EFA3 /* Lockapps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C1A2D71736C9AD00C3EFA3 /* English */,
+			);
+			name = Lockapps.strings;
+			sourceTree = "<group>";
+		};
+		C9C1A2D81736C9AD00C3EFA3 /* Main theme.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C1A2D91736C9AD00C3EFA3 /* English */,
+			);
+			name = "Main theme.strings";
+			sourceTree = "<group>";
+		};
+		C9C1A2DA1736C9AD00C3EFA3 /* RestoreTiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C1A2DB1736C9AD00C3EFA3 /* English */,
+			);
+			name = RestoreTiles.strings;
+			sourceTree = "<group>";
+		};
+		C9C1A2DC1736C9AD00C3EFA3 /* strifeprefs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C1A2DD1736C9AD00C3EFA3 /* English */,
+			);
+			name = strifeprefs.strings;
+			sourceTree = "<group>";
+		};
+		C9C1A2DE1736C9AD00C3EFA3 /* Tiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C1A2DF1736C9AD00C3EFA3 /* English */,
+			);
+			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
+		C9DA64721736FB3D00DE0315 /* backup.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DA64731736FB3D00DE0315 /* en */,
+			);
+			name = backup.strings;
+			sourceTree = "<group>";
+		};
+		C9DA64741736FB3D00DE0315 /* Lockapps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DA64751736FB3D00DE0315 /* en */,
+			);
+			name = Lockapps.strings;
+			sourceTree = "<group>";
+		};
+		C9DA64761736FB3D00DE0315 /* Main theme.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DA64771736FB3D00DE0315 /* en */,
+			);
+			name = "Main theme.strings";
+			sourceTree = "<group>";
+		};
+		C9DA64781736FB3D00DE0315 /* RestoreTiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DA64791736FB3D00DE0315 /* en */,
+			);
+			name = RestoreTiles.strings;
+			sourceTree = "<group>";
+		};
+		C9DA647A1736FB3D00DE0315 /* strifeprefs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DA647B1736FB3D00DE0315 /* en */,
+			);
+			name = strifeprefs.strings;
+			sourceTree = "<group>";
+		};
+		C9DA647C1736FB3D00DE0315 /* Tiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DA647D1736FB3D00DE0315 /* en */,
+			);
+			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C93DFACB1722E4DA00CEC1B0 /* Debug */ = {
@@ -313,6 +493,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "strifeprefs/strifeprefs-Prefix.pch";
@@ -341,6 +522,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "strifeprefs/strifeprefs-Prefix.pch";

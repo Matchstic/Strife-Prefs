@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -e '/Library/Application Support/strifeprefs/Info.plist' ]
+  then
+    echo "Moving preferences backup..."
+    mv '/Library/Application Support/strifeprefs/Info.plist' '/var/mobile/Library/Preferences/strifeprefs/Info.plist'
+    mv '/Library/Application Support/strifeprefs/Tiles.plist' '/var/mobile/Library/Preferences/strifeprefs/Tiles.plist'
+    sleep 1
+    rmdir '/Library/Application Support/strifeprefs/'
+    echo "Done!"
+    
+fi
+
+if [ ! -e '/var/mobile/Library/Preferences/strifeprefs/Info.plist' ]
+  then
+    echo "Creating initial backup..."
+    cp '/var/mobile/Library/DreamBoard/Strife/Info.plist' '/var/mobile/Library/Preferences/strifeprefs/Info.plist'
+    cp '/var/mobile/Library/DreamBoard/Strife/Tiles.plist' '/var/mobile/Library/Preferences/strifeprefs/Tiles.plist'
+    echo "Done!"
+    
+fi

@@ -1,0 +1,11 @@
+/* 
+  Main theme.strings
+  strifeprefs
+
+  Created by Matt Clarke on 05/05/2013.
+
+*/
+
+"TITLE" = "Main theme";
+"DARK" = "Dark";
+"LIGHT" = "Light";

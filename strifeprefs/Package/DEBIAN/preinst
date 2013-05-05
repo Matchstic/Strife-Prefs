@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -e '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist' ]
+  then
+    cp '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist' '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist.bak'
+    
+fi
+
+echo " "
+echo "In this update:"
+echo "- Ability to backup and restore tiles"
+echo " "
+echo "Email me at mclarke0805@gmail.com if you find any bugs, or have a feature suggestion"
+echo " "

@@ -1,0 +1,21 @@
+/*
+ strifeprefs.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"RESPRING_FOOTER" = "Respring for changes to take effect.";
+"THEMING" = "Theming";
+"MAIN_THEME_FOOTER" = "Choose the colour shown behind your tiles.";
+"MAIN_THEME" = "Main theme";
+"DARK" = "Dark";
+"LIGHT" = "Light";
+"TILE_COLOUR" = "Tile colour";
+"LOCKSCREEN" = "Lockscreen";
+"SHOW_LOCKSCREEN" = "Enabled";
+"NOTIFS" = "Notifications";
+"BACKUP_RESTORE" = "Backup/Restore";
+"CREDITS" = "Strife © EndFinity, preferences by Matchstic";
+"RESPRING" = "Respring";

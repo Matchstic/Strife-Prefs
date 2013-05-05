@@ -1,0 +1,76 @@
+# RestoreTiles.plist
+
+Restore tiles
+Select the tiles you want to restore, then tap the Restore selected tiles button.
+Select tiles
+Respring once your tiles have been restored
+Restore selected tiles
+To restore a tile from an alternative backup, place the tile's folder into /var/mobile/Library/Preferences/strifeprefs/Tiles/
+Due to a known bug, you will need to restore any HTML tiles manually. The Settings application will crash otherwise.
+
+# backup.plist
+  
+Preferences
+Backup your preferences before updating Strife
+Backup preferences
+Restore preferences
+Tiles
+Backup all tiles in the event a Strife update overwrites your changes.
+Backup tiles
+Restore tiles
+
+# Lockapps.plist
+  
+Notifications
+Configure which app's notifications are displayed on the lockscreen
+System Applications
+User Applications
+Lock App 1
+Lock App 2
+Lock App 3
+Lock App 4
+Lock App 5
+
+# Tiles.plist
+  
+These are the default Windows phone 8 colours
+Colours
+Choose your tile colour, or specify a custom hex value
+Custom hex colour
+Tile colour
+Lime
+Green
+Emerald
+Teal
+Cyan
+Cobalt
+Indigo
+Violet
+Pink
+Magenta
+Crimson
+Red
+Orange
+Amber
+Yellow
+Brown
+Olive
+Steel
+Mauve
+Taupe
+
+# strifeprefs.plist
+  
+Respring for changes to take effect
+Theming
+Choose the colour shown behind your tiles.
+Main theme
+Dark
+Light
+Tile colour
+Lockscreen
+Enabled
+Notifications
+Backup/Restore
+Respring
+Strife © EndFinity, preferences by Matchstic

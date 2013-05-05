@@ -17,17 +17,19 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Respring for changes to take effect.</string>
+			<string>RESPRING_FOOTER</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>Theming</string>
+			<string>THEMING</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSLinkListCell</string>
+			<key>staticTextMessage</key>
+			<string>MAIN_THEME_FOOTER</string>
 			<key>defaults</key>
 			<string>/var/mobile/Library/DreamBoard/Strife/Info</string>
 			<key>detail</key>
@@ -35,11 +37,11 @@
 			<key>key</key>
 			<string>Theme</string>
 			<key>label</key>
-			<string>Main theme</string>
+			<string>MAIN_THEME</string>
 			<key>validTitles</key>
 			<array>
-				<string>Dark</string>
-				<string>Light</string>
+				<string>DARK</string>
+				<string>LIGHT</string>
 			</array>
 			<key>validValues</key>
 			<array>
@@ -55,7 +57,7 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Tile colour</string>
+			<string>TILE_COLOUR</string>
 			<key>get</key>
 			<string>tileColour</string>
 		</dict>
@@ -63,7 +65,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>Lockscreen</string>
+			<string>LOCKSCREEN</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -75,7 +77,7 @@
 			<key>key</key>
 			<string>ShowsLockscreen</string>
 			<key>label</key>
-			<string>Enabled</string>
+			<string>SHOW_LOCKSCREEN</string>
 			<key>set</key>
 			<string>setLockscreenOn:specifier:</string>
 		</dict>
@@ -87,7 +89,7 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Notifications</string>
+			<string>NOTIFS</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -101,13 +103,13 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Backup/Restore</string>
+			<string>BACKUP_RESTORE</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Strife © EndFinity, preferences by matchstick (Matchstic)</string>
+			<string>CREDITS</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -115,7 +117,7 @@
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>Respring</string>
+			<string>RESPRING</string>
 		</dict>
 	</array>
 	<key>title</key>

@@ -1,0 +1,17 @@
+/*
+ Lockapps.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Notifications";
+"MAIN_FOOTER" = "Configure which app's notifications are displayed on the lockscreen.";
+"SYSTEM_APP_TITLE" = "System Applications";
+"USER_APP_TITLE" = "User Applications";
+"LockApp1" = "Lock App 1";
+"LockApp2" = "Lock App 2";
+"LockApp3" = "Lock App 3";
+"LockApp4" = "Lock App 4";
+"LockApp5" = "Lock App 5";

@@ -1,0 +1,17 @@
+/*
+ backup.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Backup/Restore";
+"PREF_LABEL" = "Preferences";
+"PREF_FOOTER" = "Backup your preferences before updating Strife.";
+"BACKUP_PREFS_BUTTON" = "Backup preferences";
+"RESTORE_PREFS_BUTTON" = "Restore preferences";
+"TILES_LABEL" = "Tiles";
+"TILES_FOOTER" = "Backup all tiles in the event a Strife update overwrites your changes.";
+"BACKUP_TILES_BUTTON" = "Backup tiles";
+"RESTORE_TILES_BUTTON" = " Restore tiles";

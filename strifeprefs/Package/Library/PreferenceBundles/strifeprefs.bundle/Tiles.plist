@@ -3,10 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>title</key>
-	<string>Tile colour</string>
+	<string>TITLE</string>
 	<key>items</key>
 	<array>
 		<dict>
+			<key>staticTextMessage</key>
+			<string>FOOTER</string>
 			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>defaults</key>
@@ -16,29 +18,29 @@
 			<key>key</key>
 			<string>AccentColorHex</string>
 			<key>label</key>
-			<string>Colours</string>
+			<string>COLOURS</string>
 			<key>validTitles</key>
 			<array>
-				<string>Lime</string>
-				<string>Green</string>
-				<string>Emerald</string>
-				<string>Teal</string>
-				<string>Cyan</string>
-				<string>Cobalt</string>
-				<string>Indigo</string>
-				<string>Violet</string>
-				<string>Pink</string>
-				<string>Magenta</string>
-				<string>Crimson</string>
-				<string>Red</string>
-				<string>Orange</string>
-				<string>Amber</string>
-				<string>Yellow</string>
-				<string>Brown</string>
-				<string>Olive</string>
-				<string>Steel</string>
-				<string>Mauve</string>
-				<string>Taupe</string>
+				<string>LIME</string>
+				<string>GREEN</string>
+				<string>EMERALD</string>
+				<string>TEAL</string>
+				<string>CYAN</string>
+				<string>COBALT</string>
+				<string>INDIGO</string>
+				<string>VIOLET</string>
+				<string>PINK</string>
+				<string>MAGENTA</string>
+				<string>CRIMSON</string>
+				<string>RED</string>
+				<string>ORANGE</string>
+				<string>AMBER</string>
+				<string>YELLOW</string>
+				<string>BROWN</string>
+				<string>OLIVE</string>
+				<string>STEEL</string>
+				<string>MAUVE</string>
+				<string>TAUPE</string>
 			</array>
 			<key>validValues</key>
 			<array>
@@ -66,7 +68,7 @@
 		</dict>
 		<dict>
 			<key>footerText</key>
-			<string>Choose your tile colour, or specify a custom hex value.</string>
+			<string>TILE_OR_HEX</string>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 		</dict>
@@ -80,7 +82,7 @@
 			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>label</key>
-			<string>Custom hex colour</string>
+			<string>CUSTOM_HEX_CELL</string>
 			<key>placeholder</key>
 			<string>...</string>
 			<key>defaults</key>

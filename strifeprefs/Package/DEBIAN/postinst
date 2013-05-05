@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ -e '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist.bak' ]
+  then
+    rm '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist'
+    mv '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist.bak' '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist'
+    chown mobile '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist'
+    chmod 0775 '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist'
+    
+fi
+
+if [ ! -e '/var/mobile/Library/Preferences/strifeprefs/Info.plist' ]
+  then
+    echo "(Re)creating backup of preferences..."
+    cp '/var/mobile/Library/DreamBoard/Strife/Info.plist' '/var/mobile/Library/Preferences/strifeprefs/Info.plist'
+    cp '/var/mobile/Library/DreamBoard/Strife/Tiles.plist' '/var/mobile/Library/Preferences/strifeprefs/Tiles.plist'
+    echo "Done!"
+    
+fi
+
+if [ ! -e '/var/mobile/Library/Preferences/strifeprefs/Tiles/' ]
+  then
+    echo "Creating initial backup of tiles..."
+    cp '/var/mobile/Library/DreamBoard/Strife/Resources/Tiles' '/var/mobile/Library/Preferences/strifeprefs/Tiles/'
+    echo "Done!"
+    
+fi

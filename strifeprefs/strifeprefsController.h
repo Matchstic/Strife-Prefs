@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Preferences/Preferences.h>
+#import "UIProgressHUD.h"
 
 @interface strifeprefsController : PSListController
 -(id)specifiers;
@@ -27,10 +28,27 @@
 -(id)specifiers;
 @end
 
-@interface backupPageController : PSListController
+@class MBProgressHUD;
+@interface backupPageController : PSListController {
+    	UIProgressHUD *hud;
+}
 -(id)specifiers;
 -(void)restorePrefs;
 -(void)backUpPrefs;
+-(void)restoreTiles;
+-(void)backUpTiles;
+@end
+
+@interface tilePageUIController : UIViewController
+-(void)viewDidLoad;
+@end
+
+@interface restoreTilesController : PSListController {
+    UIProgressHUD *hud;
+}
+-(id)specifiers;
+-(void)restoreSelected;
+-(void)hideHud;
 @end
 
 @interface lockAppPageController : PSListController
@@ -41,4 +59,8 @@
 -(NSString *)lockappThree;
 -(NSString *)lockappFour;
 -(NSString *)lockappFive;
+@end
+
+@interface TestController : PSListController
+-(id)specifiers;
 @end

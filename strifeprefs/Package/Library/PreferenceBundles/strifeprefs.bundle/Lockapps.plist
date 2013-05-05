@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>title</key>
-	<string>Notifications</string>
+	<string>TITLE</string>
 	<key>items</key>
 	<array>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Configure which app&apos;s notifications are displayed on the lockscreen.</string>
+			<string>MAIN_FOOTER</string>
 		</dict>
 		<dict>
 			<key>ALAllowsSelection</key>
@@ -57,7 +57,7 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Lock App 1</string>
+			<string>LockApp1</string>
 			<key>get</key>
 			<string>lockappOne</string>
 		</dict>
@@ -106,7 +106,7 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Lock App 2</string>
+			<string>LockApp2</string>
 			<key>get</key>
 			<string>lockappTwo</string>
 		</dict>
@@ -155,7 +155,7 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Lock App 3</string>
+			<string>LockApp3</string>
 			<key>get</key>
 			<string>lockappThree</string>
 		</dict>
@@ -204,7 +204,7 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Lock App 4</string>
+			<string>LockApp4</string>
 			<key>get</key>
 			<string>lockappFour</string>
 		</dict>
@@ -253,7 +253,7 @@
 			<key>isController</key>
 			<true/>
 			<key>label</key>
-			<string>Lock App 5</string>
+			<string>LockApp5</string>
 			<key>get</key>
 			<string>lockappFive</string>
 		</dict>
@@ -263,7 +263,7 @@
 		<key>cell</key>
 		<string>PSLinkCell</string>
 		<key>label</key>
-		<string>Notifications</string>
+		<string>TITLE</string>
 	</dict>
 </dict>
 </plist>
