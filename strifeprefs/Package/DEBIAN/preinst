@@ -9,6 +9,14 @@ fi
 echo " "
 echo "In this update:"
 echo "- Ability to backup and restore tiles"
+echo "- Support for more languages! Includes:"
+echo "    - English"
+echo "    - Portuguese"
 echo " "
 echo "Email me at mclarke0805@gmail.com if you find any bugs, or have a feature suggestion"
 echo " "
+
+if [ ! -e '/System/Library/PreferenceBundles/AppList.bundle/AppList' ]
+  then
+    echo "Looks like you don't have AppList installed! To fix the 256 error you'll get after installing this, simply install it from Cydia."
+fi
