@@ -25,3 +25,5 @@ if [ ! -e '/var/mobile/Library/Preferences/strifeprefs/Tiles/' ]
     echo "Done!"
     
 fi
+
+chown -R mobile '/var/mobile/Library/DreamBoard/Strife/Resources/Tiles/'

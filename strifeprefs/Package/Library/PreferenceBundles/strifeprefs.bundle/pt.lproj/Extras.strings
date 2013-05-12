@@ -1,0 +1,12 @@
+/*
+ Extras.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 07/05/2013.
+ 
+ */
+
+"CUSTOM" = "Personalizar";
+"BACKING_UP" = "Criando cópia...";
+"DONE" = "Concluído!";
+"RESTORING" = "Restaurando cópia...";

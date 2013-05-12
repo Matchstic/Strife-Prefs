@@ -4,11 +4,11 @@
  
  Created by Matt Clarke on 05/05/2013.
  
-*/
+ */
 
-"TITLE" = "Tile colour";
-"FOOTER" = "These are the default Windows Phone 8 colours.";
-"COLOURS" = "Colours";
+"TITLE" = "Cor do tile";
+"FOOTER" = "Estas são as cores por defeito do Windows Phone 8.";
+"COLOURS" = "Cores";
 "LIME" = "Lime";
 "GREEN" = "Green";
 "EMERALD" = "Emerald";
@@ -29,5 +29,5 @@
 "STEEL" = "Steel";
 "MAUVE" = "Mauve";
 "TAUPE" = "Taupe";
-"TILE_OR_HEX" = "Choose your tile colour, or specify a custom hex value.";
-"CUSTOM_HEX_CELL" = "Custom hex colour:";
+"TILE_OR_HEX" = "Escola a cor do seu tile, ou especifique uma valor de cor hexadecimal.";
+"CUSTOM_HEX_CELL" = "Cor hexadecimal preferencial:";

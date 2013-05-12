@@ -1,0 +1,21 @@
+/*
+ strifeprefs.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"RESPRING_FOOTER" = "Perazahruzi kab ubačyc zmieny.";
+"THEMING" = "Tema";
+"MAIN_THEME_FOOTER" = "Vybrac koler plitak.";
+"MAIN_THEME" = "Asnoúnaja Tema";
+"DARK" = "Ciomny";
+"LIGHT" = "Svietly";
+"TILE_COLOUR" = "Koler Plitki";
+"LOCKSCREEN" = "Haloúny Ekran";
+"SHOW_LOCKSCREEN" = "Tak";
+"NOTIFS" = "Natatki";
+"BACKUP_RESTORE" = "Zapampavac";
+"CREDITS" = "Strife © EndFinity, preferencyi by Matchstic";
+"RESPRING" = "Pierahruzic";

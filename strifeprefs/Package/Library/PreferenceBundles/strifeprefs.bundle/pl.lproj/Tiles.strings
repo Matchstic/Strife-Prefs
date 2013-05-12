@@ -1,0 +1,33 @@
+/*
+ Tiles.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Kolor kafelków";
+"FOOTER" = "To są standardowe kolory systemu Windows Phone 8.";
+"COLOURS" = "Kolory";
+"LIME" = "Limonkowy";
+"GREEN" = "Zielony";
+"EMERALD" = "Szmaragdowy";
+"TEAL" = "Cyraneczkowy";
+"CYAN" = "Jasnoniebieski";
+"COBALT" = "Kobaltowy";
+"INDIGO" = "Indygowy";
+"VIOLET" = "Fioletowy";
+"PINK" = "Różowy";
+"MAGENTA" = "Karmazynowy";
+"CRIMSON" = "Purpurowy";
+"RED" = "Czerwony";
+"ORANGE" = "Pomarańczowy";
+"AMBER" = "Bursztynowy";
+"YELLOW" = "Żółty";
+"BROWN" = "Brązowy";
+"OLIVE" = "Oliwny";
+"STEEL" = "Stalowy";
+"MAUVE" = "fiołkoworóżowy";
+"TAUPE" = "Ciemnoszary";
+"TILE_OR_HEX" = "Wybierz swój kolor z listy lub wprowadü jego wartoúć heksadecymalną.";
+"CUSTOM_HEX_CELL" = "Wartoúć heksadecymalna koloru:";

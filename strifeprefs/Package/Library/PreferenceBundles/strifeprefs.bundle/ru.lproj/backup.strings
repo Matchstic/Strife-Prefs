@@ -1,0 +1,17 @@
+/*
+ backup.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Zachavac/Zahruzic";
+"PREF_LABEL" = "Pažadańni";
+"PREF_FOOTER" = "Kali łaska zachavajcie svae ńastrojki pierad abnaúlienniem Strife.";
+"BACKUP_PREFS_BUTTON" = "Zachavac Pažadańni";
+"RESTORE_PREFS_BUTTON" = "Zahruzic Pažadańni";
+"TILES_LABEL" = "Nazvy";
+"TILES_FOOTER" = "Zachavajcie svae zmeny kali Strife abnaúliennie perapiša vašy zmieny.";
+"BACKUP_TILES_BUTTON" = "Zachavac plitki";
+"RESTORE_TILES_BUTTON" = "Zahruzic plitki";

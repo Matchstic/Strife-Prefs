@@ -7,16 +7,22 @@ if [ -e '/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist' ]
 fi
 
 echo " "
-echo "In this update:"
+echo "In this version:"
 echo "- Ability to backup and restore tiles"
+echo "- Backups can now be synced with iTunes/iCloud"
 echo "- Support for more languages! Includes:"
-echo "    - English"
-echo "    - Portuguese"
+echo "    - Portuguese (by guimenez)"
+echo "    - Belarusian (by zamulini)"
+echo "    - Polish (by MikelThief)"
 echo " "
-echo "Email me at mclarke0805@gmail.com if you find any bugs, or have a feature suggestion"
+echo "PM me (or email me at mclarke0805@gmail.com) if you find any bugs, have a feature suggestion, or want to contribute more translations."
 echo " "
 
 if [ ! -e '/System/Library/PreferenceBundles/AppList.bundle/AppList' ]
   then
+    echo "*******************************************************"
     echo "Looks like you don't have AppList installed! To fix the 256 error you'll get after installing this, simply install it from Cydia."
+    echo " "
+    echo "*******************************************************"
+    echo " "
 fi

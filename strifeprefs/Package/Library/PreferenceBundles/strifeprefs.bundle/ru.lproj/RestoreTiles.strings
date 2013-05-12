@@ -1,0 +1,14 @@
+/*
+ RestoreTiles.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Ustaliavac plitki";
+"FIRST_FOOTER" = "Vyrašycie, jakija plitki ustaliavac, potym nacisnicie knopku Ustaliavac vybranyjan plitki.";
+"SELECT_TILES" = "Vybrac plitki";
+"RESPRING_FOOTER" = "Paslia ustaliavannia perahruzisia.";
+"RESTORE_TILES" = "Ustaliavac vybrannyja plitki";
+"MANUAL_RESTORE_INFO" = "Kab samomu ustaliavac plitki, zapampuj ih u papku /var/mobile/Library/Preferences/strifeprefs/Tiles/";

@@ -1,0 +1,17 @@
+/*
+ Lockapps.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Natatki";
+"MAIN_FOOTER" = "Vyrašycie jakie davedki zjaúliajucća na haloúnym ekrane.";
+"SYSTEM_APP_TITLE" = "Sistemnyja prahramy";
+"USER_APP_TITLE" = "Tvae Prahramy";
+"LockApp1" = "App ekrana 1";
+"LockApp2" = "App ekrana 2";
+"LockApp3" = "App ekrana 3";
+"LockApp4" = "App ekrana 4";
+"LockApp5" = "App ekrana 5";

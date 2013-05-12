@@ -4,11 +4,11 @@
  
  Created by Matt Clarke on 05/05/2013.
  
-*/
+ */
 
-"TITLE" = "Tile colour";
-"FOOTER" = "These are the default Windows Phone 8 colours.";
-"COLOURS" = "Colours";
+"TITLE" = "Koler Plitki";
+"FOOTER" = "Heta standartnyja kolery Windows Phone 8.";
+"COLOURS" = "Kolery";
 "LIME" = "Lime";
 "GREEN" = "Green";
 "EMERALD" = "Emerald";
@@ -29,5 +29,5 @@
 "STEEL" = "Steel";
 "MAUVE" = "Mauve";
 "TAUPE" = "Taupe";
-"TILE_OR_HEX" = "Choose your tile colour, or specify a custom hex value.";
-"CUSTOM_HEX_CELL" = "Custom hex colour:";
+"TILE_OR_HEX" = "Vybrac koler plitki abo úžyc svoj hex numar.";
+"CUSTOM_HEX_CELL" = "Svoj hex numar";

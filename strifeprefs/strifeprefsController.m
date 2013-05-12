@@ -101,50 +101,71 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 -(NSString *)tileColour {
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsFile];
     NSString *colour = [dict objectForKey:@"AccentColorHex"];
-   
+    NSString *colName;
+    
     // There must be a better way acheive this!
     if ([colour isEqualToString:@"A4C400"]) {
-        colour = @"Lime";
+        colour = colName;
     } else if ([colour isEqualToString:@"60A917"]) {
-        colour = @"Green";
+        colName = [[self bundle] localizedStringForKey:@"GREEN" value:@"Green" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"008A00"]) {
-        colour = @"Emerald";
+        colName = [[self bundle] localizedStringForKey:@"EMERALD" value:@"Emerald" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"00ABA9"]) {
-        colour = @"Teal";
+        colName = [[self bundle] localizedStringForKey:@"TEAL" value:@"Teal" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"1BA1E2"]) {
-        colour = @"Cyan";
+        colName = [[self bundle] localizedStringForKey:@"CYAN" value:@"Cyan" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"0050EF"]) {
-        colour = @"Cobalt";
+        colName = [[self bundle] localizedStringForKey:@"COBALT" value:@"Cobalt" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"6A00FF"]) {
-        colour = @"Indigo";
+        colName = [[self bundle] localizedStringForKey:@"INDIGO" value:@"Indigo" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"AA00FF"]) {
-        colour = @"Violet";
+        colName = [[self bundle] localizedStringForKey:@"VIOLET" value:@"Violet" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"F472D0"]) {
-        colour = @"Pink";
+        colName = [[self bundle] localizedStringForKey:@"PINK" value:@"Pink" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"D80073"]) {
-        colour = @"Magenta";
+        colName = [[self bundle] localizedStringForKey:@"MAGENTA" value:@"Magenta" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"A20025"]) {
-        colour = @"Crimson";
+        colName = [[self bundle] localizedStringForKey:@"CRIMSON" value:@"Crimson" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"E51400"]) {
-        colour = @"Red";
+        colName = [[self bundle] localizedStringForKey:@"RED" value:@"Red" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"FA6800"]) {
-        colour = @"Orange";
+        colName = [[self bundle] localizedStringForKey:@"ORANGE" value:@"Orange" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"F0A30A"]) {
-        colour = @"Amber";
+        colName = [[self bundle] localizedStringForKey:@"AMBER" value:@"Amber" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"E3C800"]) {
-        colour = @"Yellow";
+        colName = [[self bundle] localizedStringForKey:@"YELLOW" value:@"Yellow" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"825A2C"]) {
-        colour = @"Brown";
+        colName = [[self bundle] localizedStringForKey:@"BROWN" value:@"Brown" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"6D8764"]) {
-        colour = @"Olive";
+        colName = [[self bundle] localizedStringForKey:@"OLIVE" value:@"Olive" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"647687"]) {
-        colour = @"Steel";
+        colName = [[self bundle] localizedStringForKey:@"STEEL" value:@"Steel" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"76608A"]) {
-        colour = @"Mauve";
+        colName = [[self bundle] localizedStringForKey:@"MAUVE" value:@"Mauve" table:@"Tiles"];
+        colour = colName;
     } else if ([colour isEqualToString:@"87794E"]) {
-        colour = @"Taupe";
+        colName = [[self bundle] localizedStringForKey:@"TAUPE" value:@"Taupe" table:@"Tiles"];
+        colour = colName;
     } else {
-        colour = @"Custom";
+        colName = [[self bundle] localizedStringForKey:@"CUSTOM" value:@"Custom" table:@"Extras"];
+        colour = colName;
     }
     
     [dict release];
@@ -330,8 +351,11 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 
 -(void)backUpTiles {
     
+    NSString *backup = [[self bundle] localizedStringForKey:@"BACKING_UP" value:@"Backing up..." table:@"Extras"];
+    NSString *done = [[self bundle] localizedStringForKey:@"DONE" value:@"Done!" table:@"Extras"];
+    
     hud = [[UIProgressHUD alloc] initWithWindow:[[UIApplication sharedApplication] keyWindow]];
-    [hud setText:@"Backing up..."];
+    [hud setText:backup];
     [hud show:YES];
     [hud setAlpha:0.0f];
     CGAffineTransform affine = CGAffineTransformMakeScale (0.3, 0.3);
@@ -366,7 +390,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
             [plistDict writeToFile:@"/var/mobile/Library/Preferences/com.matchstick.strifeprefs.plist" atomically:YES];
             [plistDict release];
             
-            [hud setText:@"Done!"];
+            [hud setText:done];
             [hud done];
             [self performSelector:@selector(hideHud) withObject:nil afterDelay:1.5f];
         });
@@ -396,8 +420,11 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 
 -(void)backUpPrefs {
     
+    NSString *backup = [[self bundle] localizedStringForKey:@"BACKING_UP" value:@"Backing up..." table:@"Extras"];
+    NSString *done = [[self bundle] localizedStringForKey:@"DONE" value:@"Done!" table:@"Extras"];
+    
     hud = [[UIProgressHUD alloc] initWithWindow:[[UIApplication sharedApplication] keyWindow]];
-    [hud setText:@"Backing up..."];
+    [hud setText:backup];
     [hud show:YES];
     [hud setAlpha:0.0f];
     CGAffineTransform affine = CGAffineTransformMakeScale (0.3, 0.3);
@@ -427,7 +454,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     
     [fileManger release];
     
-    [hud setText:@"Done!"];
+    [hud setText:done];
     [hud done];
     [self performSelector:@selector(hideHud) withObject:nil afterDelay:1.5f];
 }
@@ -439,8 +466,11 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 
 -(void)restorePrefs {
     
+    NSString *restore = [[self bundle] localizedStringForKey:@"RESTORING" value:@"Restoring..." table:@"Extras"];
+    NSString *done = [[self bundle] localizedStringForKey:@"DONE" value:@"Done!" table:@"Extras"];
+    
     hud = [[UIProgressHUD alloc] initWithWindow:[[UIApplication sharedApplication] keyWindow]];
-    [hud setText:@"Restoring..."];
+    [hud setText:restore];
     [hud show:YES];
     [hud setAlpha:0.0f];
     CGAffineTransform affine = CGAffineTransformMakeScale (0.3, 0.3);
@@ -469,7 +499,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
         [fileManger copyItemAtPath:infoPlistSource toPath:infoPlistDest error:&error];
         [fileManger copyItemAtPath:tilesPlistSource toPath:tilesPlistDest error:&error];
         
-        [hud setText:@"Done!"];
+        [hud setText:done];
         [hud done];
         [self performSelector:@selector(hideHud) withObject:nil afterDelay:1.5f];
         
@@ -517,8 +547,12 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 };
 
 -(void)restoreSelected {
+    
+    NSString *restore = [[self bundle] localizedStringForKey:@"RESTORING" value:@"Restoring..." table:@"Extras"];
+    NSString *done = [[self bundle] localizedStringForKey:@"DONE" value:@"Done!" table:@"Extras"];
+    
     hud = [[UIProgressHUD alloc] initWithWindow:[[UIApplication sharedApplication] keyWindow]];
-    [hud setText:@"Restoring..."];
+    [hud setText:restore];
     [hud show:YES];
     [hud setAlpha:0.0f];
     CGAffineTransform affine = CGAffineTransformMakeScale (0.3, 0.3);
@@ -551,45 +585,46 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
                     
                     // www.exilesofthardware.blogspot.com/2013/01/ios-run-application-with-root-privileges.html
                     setuid(0);
+                    system("chown -R mobile '/var/mobile/Library/DreamBoard/Strife/Resources/Tiles/'");
                 
-                    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+                    //NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
                 
-                    [dict setObject:@"mobile" forKey:NSFileOwnerAccountName];
-                    [dict setObject:@"mobile" forKey:NSFileGroupOwnerAccountName];
+                    //[dict setObject:@"mobile" forKey:NSFileOwnerAccountName];
+                    //[dict setObject:@"mobile" forKey:NSFileGroupOwnerAccountName];
                 
-                    NSArray *subPaths = [fileManager subpathsAtPath:[tilesDest stringByAppendingString:identifier]];
-                    for (NSString *aPath in subPaths) {
+                    //NSArray *subPaths = [fileManager subpathsAtPath:[tilesDest stringByAppendingString:identifier]];
+                   // for (NSString *aPath in subPaths) {
                         // Change the permissions on the file
-                        setuid(0);
-                        NSError *error = nil;
-                        NSLog(@"Setting file permissions in main directory");
-                        [[NSFileManager defaultManager] setAttributes:dict ofItemAtPath:aPath error:&error];
+                   //     setuid(0);
+                   //     NSError *error = nil;
+                   //     NSLog(@"Setting file permissions in main directory");
+                   //     [[NSFileManager defaultManager] setAttributes:dict ofItemAtPath:aPath error:&error];
                         
                         // Mucking about with directory permissions ;P
-                        BOOL isDirectory;
-                        [fileManager fileExistsAtPath:aPath isDirectory:&isDirectory];
-                        if (isDirectory) {
-                            NSLog(@"Ooh, we have ourselves a subdirectory!");
+                   //     BOOL isDirectory;
+                   //     [fileManager fileExistsAtPath:aPath isDirectory:&isDirectory];
+                   //     if (isDirectory) {
+                   //         NSLog(@"Ooh, we have ourselves a subdirectory!");
                             // Change the permissions of files in directory here
-                            NSError *error = nil;
-                            NSDirectoryEnumerator *dirEnum = [fileManager enumeratorAtPath:aPath];
-                            NSLog(@"About to enter while loop");
+                   //         NSError *error = nil;
+                   //         NSArray *extraSubPaths = [fileManager subpathsAtPath:aPath];
+                   //         NSLog(@"About to enter while loop");
                             // Change permissions of file
-                            for (NSString *file in dirEnum) {
-                                [fileManager setAttributes:dict ofItemAtPath:[aPath stringByAppendingPathComponent:file] error:&error];
+                   //         for (NSString *file in extraSubPaths) {
+                   //             [fileManager setAttributes:dict ofItemAtPath:[aPath stringByAppendingPathComponent:file] error:&error];
                                 // If it's actually a subdirectory, repeat this for files within it
-                                NSString *subdirPath = [aPath stringByAppendingPathComponent:file];
-                                [fileManager fileExistsAtPath:subdirPath isDirectory:&isDirectory];
-                                NSLog(@"Checked if its a subdir or not");
-                                if (isDirectory) {
-                                    NSLog(@"'Tis a subdir");
-                                    [self isActuallySubdirectory:subdirPath];
-                                }
-                            }
-                        }
-                    }
+                   //             NSString *subdirPath = [aPath stringByAppendingPathComponent:file];
+                   //             [fileManager fileExistsAtPath:subdirPath isDirectory:&isDirectory];
+                   //             NSLog(@"Checked if its a subdir or not");
+                   //            if (isDirectory) {
+                   //                 NSLog(@"'Tis a subdir");
+                   //                 [self isActuallySubdirectory:subdirPath];
+                   //             }
+                   //         }
+                   //     }
+                   // }
                 
-                    [dict release];
+                   // [dict release];
                 
                     [fileManager removeItemAtPath:[tilesDest stringByAppendingString:identifier] error:&error];
                     setuid(501);
@@ -597,7 +632,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
             }
         }
         dispatch_async(dispatch_get_main_queue(), ^{
-            [hud setText:@"Done!"];
+            [hud setText:done];
             [hud done];
             [self performSelector:@selector(hideHud) withObject:nil afterDelay:1.5f];
         });
@@ -617,65 +652,9 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     [hud release];
 }
 
--(void)isActuallySubdirectory:(NSString *)subdirPath {
-    NSLog(@"Let's run that funky method");
-    NSError *error = nil;
-    NSString *subPath = subdirPath;
-    NSFileManager* fileManager = [NSFileManager defaultManager];
-    NSArray *availableFiles = [fileManager contentsOfDirectoryAtPath:subPath error:&error];
-    
-    // Check for files in subdirectory
-        for (NSString *filename in availableFiles) {
-            NSLog(@"There's filenames in the directory!");
-            // If it is, copy it.
-            if (filename) {
-                // Parse the directory to make sure it doesn't have any non-writeable files
-                setuid(0);
-            
-                NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-            
-                [dict setObject:@"mobile" forKey:NSFileOwnerAccountName];
-                [dict setObject:@"mobile" forKey:NSFileGroupOwnerAccountName];
-            
-                NSArray *subPaths = [fileManager subpathsAtPath:[subPath stringByAppendingString:filename]];
-                for (NSString *aPath in subPaths) {
-                    NSLog(@"There's aPath in subPaths");
-                    // Change the permissions on the file
-                    setuid(0);
-                    NSError *error = nil;
-                    [[NSFileManager defaultManager] setAttributes:dict ofItemAtPath:aPath error:&error];
-                    
-                    NSLog(@"Set it's permissions");
-                    // Mucking about with directory permissions ;P
-                    BOOL isDirectory;
-                    [fileManager fileExistsAtPath:aPath isDirectory:&isDirectory];
-                    if (isDirectory) {
-                        NSLog(@"It's a subdir!");
-                        // Change the permissions of files in directory here
-                        NSError *error = nil;
-                        NSDirectoryEnumerator *dirEnum = [fileManager enumeratorAtPath:aPath];
-                        NSString *file;
-                        // Change permissions of file
-                        for (file in dirEnum) {
-                            NSLog(@"Entering while loop");
-                            [fileManager setAttributes:dict ofItemAtPath:[aPath stringByAppendingPathComponent:file] error:&error];
-                            // If it's actually a subdirectory, repeat this for files within it
-                            NSString *subdirPath = [aPath stringByAppendingPathComponent:file];
-                            [fileManager fileExistsAtPath:aPath isDirectory:&isDirectory];
-                            if (isDirectory) {
-                                NSLog(@"'Tis another subdir!");
-                                [self isActuallySubdirectory:subdirPath];
-                            }
-                        }
-                    }
-                }
-            
-            [dict release];
-            }
-        }
-}
-
 @end
+
+/*
 
 @interface restoreTilesCell : PSTableCell <PreferencesTableCustomView> {
     UILabel *_label;
@@ -880,34 +859,4 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     return hexComponent / 255.0;
 }
 @end
-
-@implementation TestController
-
-// Load up the cells from the plist
--(id)specifiers {
-	if(_specifiers == nil) {
-        _specifiers = [[self loadSpecifiersFromPlistName:@"Nothing" target:self] retain];
-        _specifiers = [self localizedSpecifiersForSpecifiers:_specifiers];
-    }
-    return _specifiers;
-}
-
-- (NSArray *)localizedSpecifiersForSpecifiers:(NSArray *)s {
-	int i;
-	for(i=0; i<[s count]; i++) {
-		if([[s objectAtIndex: i] name]) {
-			[[s objectAtIndex: i] setName:[[self bundle] localizedStringForKey:[[s objectAtIndex: i] name] value:[[s objectAtIndex: i] name] table:nil]];
-		}
-		if([[s objectAtIndex: i] titleDictionary]) {
-			NSMutableDictionary *newTitles = [[NSMutableDictionary alloc] init];
-			for(NSString *key in [[s objectAtIndex: i] titleDictionary]) {
-				[newTitles setObject: [[self bundle] localizedStringForKey:[[[s objectAtIndex: i] titleDictionary] objectForKey:key] value:[[[s objectAtIndex: i] titleDictionary] objectForKey:key] table:nil] forKey: key];
-			}
-			[[s objectAtIndex: i] setTitleDictionary: [newTitles autorelease]];
-		}
-	}
-	
-	return s;
-};
-
-@end
+*/

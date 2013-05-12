@@ -1,0 +1,17 @@
+/*
+ backup.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Cópia/Restauro";
+"PREF_LABEL" = "Preferências";
+"PREF_FOOTER" = "Criar cópia de segurança antes de atualizar o Strife.";
+"BACKUP_PREFS_BUTTON" = "Preferências da Cópia";
+"RESTORE_PREFS_BUTTON" = "Preferências do Restauro";
+"TILES_LABEL" = "Tiles";
+"TILES_FOOTER" = "Cria uma Cópia de segurança antes do Strife substituir as suas preferências.";
+"BACKUP_TILES_BUTTON" = "Cópia de tiles";
+"RESTORE_TILES_BUTTON" = " Restauro de tiles";

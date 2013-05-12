@@ -1,0 +1,15 @@
+/*
+ RestoreTiles.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Restaurar tiles";
+"FIRST_FOOTER" = "Selecione os tiles que pretende restaurar, depois selecione a opção de restauro dos tiles selecionados.";
+// Devido a erro conhecido, terá que restaurar manualmente qualquer HTML tile. Se não, o programa de definições irá terminar forçadamente.";
+"SELECT_TILES" = "Selecione os tiles";
+"RESPRING_FOOTER" = "Reinicie assim que o restauro estiver concluído.";
+"RESTORE_TILES" = "Restaurar tiles selecionados";
+"MANUAL_RESTORE_INFO" = "Para restaurar um tile de uma cópia alternativa, substitua a paste de tiles para /var/mobile/Library/Preferences/strifeprefs/Tiles/";

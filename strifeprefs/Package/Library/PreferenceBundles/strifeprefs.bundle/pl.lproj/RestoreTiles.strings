@@ -1,0 +1,14 @@
+/*
+ RestoreTiles.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Przywróć kafelki";
+"FIRST_FOOTER" = "Wybierz kafelki, które chcesz przywrócić, a nastÍpnie stuknij w przycisk [Przywróć wybrane kafelki].";
+"SELECT_TILES" = "Wybierz kafelki";
+"RESPRING_FOOTER" = "Wykonaj respring po przywróceniu kafelków.";
+"RESTORE_TILES" = "Przywróć wybrane kafelki";
+"MANUAL_RESTORE_INFO" = "Aby przywrócić z innej kopii zapasowej, umieúć folder kafelka w var/mobile/Library/Preferences/strifeprefs/Tiles/";

@@ -1,0 +1,17 @@
+/*
+ Lockapps.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Powiadomienia";
+"MAIN_FOOTER" = "Wybierz aplikacje które bÍdą umieszczały swoje powiadomienia na ekranie blokady.";
+"SYSTEM_APP_TITLE" = "Aplikacje systemowe";
+"USER_APP_TITLE" = "Aplikacje użytkownika";
+"LockApp1" = "Aplikacja nr 1";
+"LockApp2" = "Aplikacja nr 2";
+"LockApp3" = "Aplikacja nr 3";
+"LockApp4" = "Aplikacja nr 4";
+"LockApp5" = "Aplikacja nr 5";

@@ -26,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		C92B59A7172BFAC10062A7CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C93D412C173AA05E00DD4BF0 /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		C93D412D173AA05E00DD4BF0 /* preinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
 		C93DFAA81722E4DA00CEC1B0 /* strifeprefs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = strifeprefs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93DFAAB1722E4DA00CEC1B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C93DFAAD1722E4DA00CEC1B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -47,11 +49,36 @@
 		C9409A3C172B3E5F00022F29 /* RestoreTileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreTileCell.m; sourceTree = "<group>"; };
 		C9409A40172B482100022F29 /* SpringBoardServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpringBoardServices.framework; path = System/Library/PrivateFrameworks/SpringBoardServices.framework; sourceTree = SDKROOT; };
 		C947585E1725A76E00C560C0 /* backup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = backup.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/backup.plist; sourceTree = "<group>"; };
+		C95E030F173AF153004AFB2D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = backup.strings; sourceTree = "<group>"; };
+		C95E0311173AF153004AFB2D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = Extras.strings; sourceTree = "<group>"; };
+		C95E0313173AF153004AFB2D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = Lockapps.strings; sourceTree = "<group>"; };
+		C95E0315173AF153004AFB2D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = "Main theme.strings"; sourceTree = "<group>"; };
+		C95E0317173AF153004AFB2D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = RestoreTiles.strings; sourceTree = "<group>"; };
+		C95E0319173AF153004AFB2D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = strifeprefs.strings; sourceTree = "<group>"; };
+		C95E031B173AF153004AFB2D /* pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = pl; path = Tiles.strings; sourceTree = "<group>"; };
 		C95F269E17289C1F00F842BE /* UIProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressHUD.h; sourceTree = "<group>"; };
 		C9602EEB17294725001A071A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C96C12A01723F50B0092BD64 /* Lockapps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Lockapps.plist; path = Package/Library/PreferenceBundles/strifeprefs.bundle/Lockapps.plist; sourceTree = "<group>"; };
 		C96C12A11723FDCF0092BD64 /* ALApplicationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALApplicationList.h; sourceTree = "<group>"; };
 		C96C12A31723FEAB0092BD64 /* libapplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libapplist.dylib; path = ../../../../../opt/iOSOpenDev/lib/libapplist.dylib; sourceTree = "<group>"; };
+		C9920A9D1739A25500BF0C07 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text; name = pl; path = Polish; sourceTree = "<group>"; };
+		C9920AA01739A25500BF0C07 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text; name = tr; path = Turkish; sourceTree = "<group>"; };
+		C9920AA21739A26700BF0C07 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text; name = pt; path = portuguese; sourceTree = "<group>"; };
+		C99E197F173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = backup.strings; sourceTree = "<group>"; };
+		C99E1981173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru; path = belarusian; sourceTree = "<group>"; };
+		C99E1983173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Extras.strings; sourceTree = "<group>"; };
+		C99E1985173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Lockapps.strings; sourceTree = "<group>"; };
+		C99E1987173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "Main theme.strings"; sourceTree = "<group>"; };
+		C99E1989173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = RestoreTiles.strings; sourceTree = "<group>"; };
+		C99E198B173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = strifeprefs.strings; sourceTree = "<group>"; };
+		C99E198D173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Tiles.strings; sourceTree = "<group>"; };
+		C99E198F173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru; path = zamulini; sourceTree = "<group>"; };
+		C9AF622617380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = backup.strings; sourceTree = "<group>"; };
+		C9AF622817380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = Lockapps.strings; sourceTree = "<group>"; };
+		C9AF622A17380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "Main theme.strings"; sourceTree = "<group>"; };
+		C9AF622C17380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = RestoreTiles.strings; sourceTree = "<group>"; };
+		C9AF622E17380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = strifeprefs.strings; sourceTree = "<group>"; };
+		C9AF623017380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = Tiles.strings; sourceTree = "<group>"; };
 		C9C1A2D51736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = backup.strings; sourceTree = "<group>"; };
 		C9C1A2D71736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Lockapps.strings; sourceTree = "<group>"; };
 		C9C1A2D91736C9AD00C3EFA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = "Main theme.strings"; sourceTree = "<group>"; };
@@ -67,6 +94,8 @@
 		C9DA64791736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = RestoreTiles.strings; sourceTree = "<group>"; };
 		C9DA647B1736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = strifeprefs.strings; sourceTree = "<group>"; };
 		C9DA647D1736FB3D00DE0315 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Tiles.strings; sourceTree = "<group>"; };
+		C9EBE0CA173870D400643921 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = Extras.strings; sourceTree = "<group>"; };
+		C9EBE0CC173870DF00643921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Extras.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +177,8 @@
 		C93DFAB31722E4DA00CEC1B0 /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
+				C93D412C173AA05E00DD4BF0 /* postinst */,
+				C93D412D173AA05E00DD4BF0 /* preinst */,
 				C93DFAB51722E4DA00CEC1B0 /* control */,
 			);
 			name = DEBIAN;
@@ -199,6 +230,10 @@
 		C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
+				C99E197D173F05C70026D219 /* ru.lproj */,
+				C9920A9B1739A25500BF0C07 /* pl.lproj */,
+				C9920A9E1739A25500BF0C07 /* tr.lproj */,
+				C9AF622417380E2C00A6A709 /* pt.lproj */,
 				C9DA64711736FB3D00DE0315 /* en.lproj */,
 				C9C1A2D11736C27500C3EFA3 /* English.lproj */,
 				C9CF74E1172C97730090725C /* RestoreTiles.plist */,
@@ -213,9 +248,67 @@
 			name = "___PACKAGENAME___.bundle";
 			sourceTree = "<group>";
 		};
+		C9920A9B1739A25500BF0C07 /* pl.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C95E030E173AF153004AFB2D /* backup.strings */,
+				C95E0310173AF153004AFB2D /* Extras.strings */,
+				C95E0312173AF153004AFB2D /* Lockapps.strings */,
+				C95E0314173AF153004AFB2D /* Main theme.strings */,
+				C95E0316173AF153004AFB2D /* RestoreTiles.strings */,
+				C95E0318173AF153004AFB2D /* strifeprefs.strings */,
+				C95E031A173AF153004AFB2D /* Tiles.strings */,
+				C9920A9C1739A25500BF0C07 /* Polish */,
+			);
+			name = pl.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/pl.lproj;
+			sourceTree = "<group>";
+		};
+		C9920A9E1739A25500BF0C07 /* tr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C9920A9F1739A25500BF0C07 /* Turkish */,
+			);
+			name = tr.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/tr.lproj;
+			sourceTree = "<group>";
+		};
+		C99E197D173F05C70026D219 /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C99E197E173F05C70026D219 /* backup.strings */,
+				C99E1980173F05C70026D219 /* belarusian */,
+				C99E1982173F05C70026D219 /* Extras.strings */,
+				C99E1984173F05C70026D219 /* Lockapps.strings */,
+				C99E1986173F05C70026D219 /* Main theme.strings */,
+				C99E1988173F05C70026D219 /* RestoreTiles.strings */,
+				C99E198A173F05C70026D219 /* strifeprefs.strings */,
+				C99E198C173F05C70026D219 /* Tiles.strings */,
+				C99E198E173F05C70026D219 /* zamulini */,
+			);
+			name = ru.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/ru.lproj;
+			sourceTree = "<group>";
+		};
+		C9AF622417380E2C00A6A709 /* pt.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C9920AA11739A26700BF0C07 /* portuguese */,
+				C9AF622517380E2C00A6A709 /* backup.strings */,
+				C9AF622717380E2C00A6A709 /* Lockapps.strings */,
+				C9AF622917380E2C00A6A709 /* Main theme.strings */,
+				C9AF622B17380E2C00A6A709 /* RestoreTiles.strings */,
+				C9AF622D17380E2C00A6A709 /* strifeprefs.strings */,
+				C9AF622F17380E2C00A6A709 /* Tiles.strings */,
+			);
+			name = pt.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/pt.lproj;
+			sourceTree = "<group>";
+		};
 		C9C1A2D11736C27500C3EFA3 /* English.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBE0C9173870D400643921 /* Extras.strings */,
 				C9C1A2D41736C9AD00C3EFA3 /* backup.strings */,
 				C9C1A2D61736C9AD00C3EFA3 /* Lockapps.strings */,
 				C9C1A2D81736C9AD00C3EFA3 /* Main theme.strings */,
@@ -230,6 +323,7 @@
 		C9DA64711736FB3D00DE0315 /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBE0CB173870DF00643921 /* Extras.strings */,
 				C9DA64721736FB3D00DE0315 /* backup.strings */,
 				C9DA64741736FB3D00DE0315 /* Lockapps.strings */,
 				C9DA64761736FB3D00DE0315 /* Main theme.strings */,
@@ -292,6 +386,11 @@
 			knownRegions = (
 				en,
 				English,
+				pt,
+				be,
+				pl,
+				tr,
+				ru,
 			);
 			mainGroup = C93DFA9E1722E4DA00CEC1B0;
 			productRefGroup = C93DFAA91722E4DA00CEC1B0 /* Products */;
@@ -333,6 +432,206 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C95E030E173AF153004AFB2D /* backup.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E030F173AF153004AFB2D /* pl */,
+			);
+			name = backup.strings;
+			sourceTree = "<group>";
+		};
+		C95E0310173AF153004AFB2D /* Extras.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E0311173AF153004AFB2D /* pl */,
+			);
+			name = Extras.strings;
+			sourceTree = "<group>";
+		};
+		C95E0312173AF153004AFB2D /* Lockapps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E0313173AF153004AFB2D /* pl */,
+			);
+			name = Lockapps.strings;
+			sourceTree = "<group>";
+		};
+		C95E0314173AF153004AFB2D /* Main theme.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E0315173AF153004AFB2D /* pl */,
+			);
+			name = "Main theme.strings";
+			sourceTree = "<group>";
+		};
+		C95E0316173AF153004AFB2D /* RestoreTiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E0317173AF153004AFB2D /* pl */,
+			);
+			name = RestoreTiles.strings;
+			sourceTree = "<group>";
+		};
+		C95E0318173AF153004AFB2D /* strifeprefs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E0319173AF153004AFB2D /* pl */,
+			);
+			name = strifeprefs.strings;
+			sourceTree = "<group>";
+		};
+		C95E031A173AF153004AFB2D /* Tiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E031B173AF153004AFB2D /* pl */,
+			);
+			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
+		C9920A9C1739A25500BF0C07 /* Polish */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9920A9D1739A25500BF0C07 /* pl */,
+			);
+			name = Polish;
+			sourceTree = "<group>";
+		};
+		C9920A9F1739A25500BF0C07 /* Turkish */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9920AA01739A25500BF0C07 /* tr */,
+			);
+			name = Turkish;
+			sourceTree = "<group>";
+		};
+		C9920AA11739A26700BF0C07 /* portuguese */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9920AA21739A26700BF0C07 /* pt */,
+			);
+			name = portuguese;
+			sourceTree = "<group>";
+		};
+		C99E197E173F05C70026D219 /* backup.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E197F173F05C70026D219 /* ru */,
+			);
+			name = backup.strings;
+			sourceTree = "<group>";
+		};
+		C99E1980173F05C70026D219 /* belarusian */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E1981173F05C70026D219 /* ru */,
+			);
+			name = belarusian;
+			sourceTree = "<group>";
+		};
+		C99E1982173F05C70026D219 /* Extras.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E1983173F05C70026D219 /* ru */,
+			);
+			name = Extras.strings;
+			sourceTree = "<group>";
+		};
+		C99E1984173F05C70026D219 /* Lockapps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E1985173F05C70026D219 /* ru */,
+			);
+			name = Lockapps.strings;
+			sourceTree = "<group>";
+		};
+		C99E1986173F05C70026D219 /* Main theme.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E1987173F05C70026D219 /* ru */,
+			);
+			name = "Main theme.strings";
+			sourceTree = "<group>";
+		};
+		C99E1988173F05C70026D219 /* RestoreTiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E1989173F05C70026D219 /* ru */,
+			);
+			name = RestoreTiles.strings;
+			sourceTree = "<group>";
+		};
+		C99E198A173F05C70026D219 /* strifeprefs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E198B173F05C70026D219 /* ru */,
+			);
+			name = strifeprefs.strings;
+			sourceTree = "<group>";
+		};
+		C99E198C173F05C70026D219 /* Tiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E198D173F05C70026D219 /* ru */,
+			);
+			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
+		C99E198E173F05C70026D219 /* zamulini */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99E198F173F05C70026D219 /* ru */,
+			);
+			name = zamulini;
+			sourceTree = "<group>";
+		};
+		C9AF622517380E2C00A6A709 /* backup.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AF622617380E2C00A6A709 /* pt */,
+			);
+			name = backup.strings;
+			sourceTree = "<group>";
+		};
+		C9AF622717380E2C00A6A709 /* Lockapps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AF622817380E2C00A6A709 /* pt */,
+			);
+			name = Lockapps.strings;
+			sourceTree = "<group>";
+		};
+		C9AF622917380E2C00A6A709 /* Main theme.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AF622A17380E2C00A6A709 /* pt */,
+			);
+			name = "Main theme.strings";
+			sourceTree = "<group>";
+		};
+		C9AF622B17380E2C00A6A709 /* RestoreTiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AF622C17380E2C00A6A709 /* pt */,
+			);
+			name = RestoreTiles.strings;
+			sourceTree = "<group>";
+		};
+		C9AF622D17380E2C00A6A709 /* strifeprefs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AF622E17380E2C00A6A709 /* pt */,
+			);
+			name = strifeprefs.strings;
+			sourceTree = "<group>";
+		};
+		C9AF622F17380E2C00A6A709 /* Tiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AF623017380E2C00A6A709 /* pt */,
+			);
+			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
 		C9C1A2D41736C9AD00C3EFA3 /* backup.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,6 +726,22 @@
 				C9DA647D1736FB3D00DE0315 /* en */,
 			);
 			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
+		C9EBE0C9173870D400643921 /* Extras.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9EBE0CA173870D400643921 /* English */,
+			);
+			name = Extras.strings;
+			sourceTree = "<group>";
+		};
+		C9EBE0CB173870DF00643921 /* Extras.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9EBE0CC173870DF00643921 /* en */,
+			);
+			name = Extras.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

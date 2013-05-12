@@ -21,5 +21,6 @@
 "STEEL" = "Steel";
 "MAUVE" = "Mauve";
 "TAUPE" = "Taupe";
+"CUSTOM" = "Custom";
 "TILE_OR_HEX" = "Choose your tile colour, or specify a custom hex value.";
-"CUSTOM_HEX_CELL" = "Custom hex colour";
+"CUSTOM_HEX_CELL" = "Custom hex colour:";

@@ -1,0 +1,21 @@
+﻿/*
+ strifeprefs.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"RESPRING_FOOTER" = "Wykonaj respring aby zmiany odniosły skutek.";
+"THEMING" = "Motywy";
+"MAIN_THEME_FOOTER" = "Wybierz kolor tła za kafelkami";
+"MAIN_THEME" = "Główny motyw";
+"DARK" = "Ciemny";
+"LIGHT" = "Jasny";
+"TILE_COLOUR" = "Kolor kafelków";
+"LOCKSCREEN" = "Ekran blokady";
+"SHOW_LOCKSCREEN" = "Włączony";
+"NOTIFS" = "Powiadomienia";
+"BACKUP_RESTORE" = "Kopia/Przywrócenie";
+"CREDITS" = "Strife © EndFinity, preferences by Matchstic, translation by MikelThief";
+"RESPRING" = "Respring";

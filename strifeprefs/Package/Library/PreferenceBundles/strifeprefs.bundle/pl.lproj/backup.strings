@@ -1,0 +1,17 @@
+/*
+ backup.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+ */
+
+"TITLE" = "Backup/Restore";
+"PREF_LABEL" = "Ustawienia";
+"PREF_FOOTER" = "Wykonaj kopie zapasową ustawień przed aktualizacją Strife.";
+"BACKUP_PREFS_BUTTON" = "Opcje kopii zapasowej";
+"RESTORE_PREFS_BUTTON" = "Przywróć ustawienia z kopii zapasowej";
+"TILES_LABEL" = "Kafelki";
+"TILES_FOOTER" = "Wykonaj kopie zapasową układu kafelków w momencie gdy Strife nadpisuje twoje ustawienia.";
+"BACKUP_TILES_BUTTON" = "Wykonaj kopie zapasową układu kafelków";
+"RESTORE_TILES_BUTTON" = "Przywóć kopiÍ zapasową układu kafelków";

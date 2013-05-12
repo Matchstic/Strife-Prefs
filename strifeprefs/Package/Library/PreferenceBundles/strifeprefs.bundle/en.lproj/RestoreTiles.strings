@@ -7,7 +7,7 @@
  */
 
 "TITLE" = "Restore tiles";
-"FIRST_FOOTER" = "Select the tiles you want to restore, then tap the Restore selected tiles button. Due to a known bug, you will need to restore any HTML tiles manually. The Settings application will crash otherwise.";
+"FIRST_FOOTER" = "Select the tiles you want to restore, then tap the Restore selected tiles button.";
 "SELECT_TILES" = "Select tiles";
 "RESPRING_FOOTER" = "Respring once your tiles have been restored.";
 "RESTORE_TILES" = "Restore selected tiles";

@@ -60,7 +60,3 @@
 -(NSString *)lockappFour;
 -(NSString *)lockappFive;
 @end
-
-@interface TestController : PSListController
--(id)specifiers;
-@end

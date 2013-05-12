@@ -73,16 +73,20 @@
 			<string>PSGroupCell</string>
 		</dict>
 		<dict>
+			<key>cell</key>
+			<string>PSTextViewCell</string>
+			<key>label</key>
+			<string>CUSTOM_HEX_CELL</string>
+		</dict>
+		<dict>
 			<key>noAutoCorrect</key>
 			<true/>
 			<key>default</key>
 			<string></string>
-			<key>alignment</key>
-			<string>1</string>
 			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>label</key>
-			<string>CUSTOM_HEX_CELL</string>
+			<string></string>
 			<key>placeholder</key>
 			<string>...</string>
 			<key>defaults</key>
