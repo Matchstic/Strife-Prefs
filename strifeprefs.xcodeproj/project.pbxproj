@@ -25,6 +25,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C90B2FD017495AB700671410 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = backup.strings; sourceTree = "<group>"; };
+		C90B2FD217495AB700671410 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Extras.strings; sourceTree = "<group>"; };
+		C90B2FD417495AB700671410 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Lockapps.strings; sourceTree = "<group>"; };
+		C90B2FD617495AB700671410 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "Main theme.strings"; sourceTree = "<group>"; };
+		C90B2FD817495AB700671410 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = RestoreTiles.strings; sourceTree = "<group>"; };
+		C90B2FDA17495AB700671410 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = strifeprefs.strings; sourceTree = "<group>"; };
+		C90B2FDC17495AB700671410 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Tiles.strings; sourceTree = "<group>"; };
+		C91AC84B174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru_BE; path = backup.strings; sourceTree = "<group>"; };
+		C91AC84D174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru_BE; path = belarusian; sourceTree = "<group>"; };
+		C91AC84F174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru_BE; path = Extras.strings; sourceTree = "<group>"; };
+		C91AC851174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru_BE; path = Lockapps.strings; sourceTree = "<group>"; };
+		C91AC853174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru_BE; path = "Main theme.strings"; sourceTree = "<group>"; };
+		C91AC855174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru_BE; path = RestoreTiles.strings; sourceTree = "<group>"; };
+		C91AC857174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru_BE; path = strifeprefs.strings; sourceTree = "<group>"; };
+		C91AC859174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru_BE; path = Tiles.strings; sourceTree = "<group>"; };
+		C91AC85B174691DA0045854C /* ru_BE */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru_BE; path = zamulini; sourceTree = "<group>"; };
 		C92B59A7172BFAC10062A7CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C93D412C173AA05E00DD4BF0 /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
 		C93D412D173AA05E00DD4BF0 /* preinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
@@ -64,15 +80,6 @@
 		C9920A9D1739A25500BF0C07 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text; name = pl; path = Polish; sourceTree = "<group>"; };
 		C9920AA01739A25500BF0C07 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text; name = tr; path = Turkish; sourceTree = "<group>"; };
 		C9920AA21739A26700BF0C07 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text; name = pt; path = portuguese; sourceTree = "<group>"; };
-		C99E197F173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = backup.strings; sourceTree = "<group>"; };
-		C99E1981173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru; path = belarusian; sourceTree = "<group>"; };
-		C99E1983173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Extras.strings; sourceTree = "<group>"; };
-		C99E1985173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Lockapps.strings; sourceTree = "<group>"; };
-		C99E1987173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "Main theme.strings"; sourceTree = "<group>"; };
-		C99E1989173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = RestoreTiles.strings; sourceTree = "<group>"; };
-		C99E198B173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = strifeprefs.strings; sourceTree = "<group>"; };
-		C99E198D173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Tiles.strings; sourceTree = "<group>"; };
-		C99E198F173F05C70026D219 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = ru; path = zamulini; sourceTree = "<group>"; };
 		C9AF622617380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = backup.strings; sourceTree = "<group>"; };
 		C9AF622817380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = Lockapps.strings; sourceTree = "<group>"; };
 		C9AF622A17380E2C00A6A709 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "Main theme.strings"; sourceTree = "<group>"; };
@@ -116,6 +123,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C90B2FCE17495AB700671410 /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C90B2FCF17495AB700671410 /* backup.strings */,
+				C90B2FD117495AB700671410 /* Extras.strings */,
+				C90B2FD317495AB700671410 /* Lockapps.strings */,
+				C90B2FD517495AB700671410 /* Main theme.strings */,
+				C90B2FD717495AB700671410 /* RestoreTiles.strings */,
+				C90B2FD917495AB700671410 /* strifeprefs.strings */,
+				C90B2FDB17495AB700671410 /* Tiles.strings */,
+			);
+			name = fr.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/fr.lproj;
+			sourceTree = "<group>";
+		};
+		C91AC849174691DA0045854C /* ru_BE.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C91AC84A174691DA0045854C /* backup.strings */,
+				C91AC84C174691DA0045854C /* belarusian */,
+				C91AC84E174691DA0045854C /* Extras.strings */,
+				C91AC850174691DA0045854C /* Lockapps.strings */,
+				C91AC852174691DA0045854C /* Main theme.strings */,
+				C91AC854174691DA0045854C /* RestoreTiles.strings */,
+				C91AC856174691DA0045854C /* strifeprefs.strings */,
+				C91AC858174691DA0045854C /* Tiles.strings */,
+				C91AC85A174691DA0045854C /* zamulini */,
+			);
+			name = ru_BE.lproj;
+			path = Package/Library/PreferenceBundles/strifeprefs.bundle/ru_BE.lproj;
+			sourceTree = "<group>";
+		};
 		C93DFA9E1722E4DA00CEC1B0 = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +269,8 @@
 		C93DFAC11722E4DA00CEC1B0 /* ___PACKAGENAME___.bundle */ = {
 			isa = PBXGroup;
 			children = (
-				C99E197D173F05C70026D219 /* ru.lproj */,
+				C90B2FCE17495AB700671410 /* fr.lproj */,
+				C91AC849174691DA0045854C /* ru_BE.lproj */,
 				C9920A9B1739A25500BF0C07 /* pl.lproj */,
 				C9920A9E1739A25500BF0C07 /* tr.lproj */,
 				C9AF622417380E2C00A6A709 /* pt.lproj */,
@@ -271,23 +311,6 @@
 			);
 			name = tr.lproj;
 			path = Package/Library/PreferenceBundles/strifeprefs.bundle/tr.lproj;
-			sourceTree = "<group>";
-		};
-		C99E197D173F05C70026D219 /* ru.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				C99E197E173F05C70026D219 /* backup.strings */,
-				C99E1980173F05C70026D219 /* belarusian */,
-				C99E1982173F05C70026D219 /* Extras.strings */,
-				C99E1984173F05C70026D219 /* Lockapps.strings */,
-				C99E1986173F05C70026D219 /* Main theme.strings */,
-				C99E1988173F05C70026D219 /* RestoreTiles.strings */,
-				C99E198A173F05C70026D219 /* strifeprefs.strings */,
-				C99E198C173F05C70026D219 /* Tiles.strings */,
-				C99E198E173F05C70026D219 /* zamulini */,
-			);
-			name = ru.lproj;
-			path = Package/Library/PreferenceBundles/strifeprefs.bundle/ru.lproj;
 			sourceTree = "<group>";
 		};
 		C9AF622417380E2C00A6A709 /* pt.lproj */ = {
@@ -391,6 +414,8 @@
 				pl,
 				tr,
 				ru,
+				ru_BE,
+				fr,
 			);
 			mainGroup = C93DFA9E1722E4DA00CEC1B0;
 			productRefGroup = C93DFAA91722E4DA00CEC1B0 /* Products */;
@@ -432,6 +457,134 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C90B2FCF17495AB700671410 /* backup.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B2FD017495AB700671410 /* fr */,
+			);
+			name = backup.strings;
+			sourceTree = "<group>";
+		};
+		C90B2FD117495AB700671410 /* Extras.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B2FD217495AB700671410 /* fr */,
+			);
+			name = Extras.strings;
+			sourceTree = "<group>";
+		};
+		C90B2FD317495AB700671410 /* Lockapps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B2FD417495AB700671410 /* fr */,
+			);
+			name = Lockapps.strings;
+			sourceTree = "<group>";
+		};
+		C90B2FD517495AB700671410 /* Main theme.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B2FD617495AB700671410 /* fr */,
+			);
+			name = "Main theme.strings";
+			sourceTree = "<group>";
+		};
+		C90B2FD717495AB700671410 /* RestoreTiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B2FD817495AB700671410 /* fr */,
+			);
+			name = RestoreTiles.strings;
+			sourceTree = "<group>";
+		};
+		C90B2FD917495AB700671410 /* strifeprefs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B2FDA17495AB700671410 /* fr */,
+			);
+			name = strifeprefs.strings;
+			sourceTree = "<group>";
+		};
+		C90B2FDB17495AB700671410 /* Tiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B2FDC17495AB700671410 /* fr */,
+			);
+			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
+		C91AC84A174691DA0045854C /* backup.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC84B174691DA0045854C /* ru_BE */,
+			);
+			name = backup.strings;
+			sourceTree = "<group>";
+		};
+		C91AC84C174691DA0045854C /* belarusian */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC84D174691DA0045854C /* ru_BE */,
+			);
+			name = belarusian;
+			sourceTree = "<group>";
+		};
+		C91AC84E174691DA0045854C /* Extras.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC84F174691DA0045854C /* ru_BE */,
+			);
+			name = Extras.strings;
+			sourceTree = "<group>";
+		};
+		C91AC850174691DA0045854C /* Lockapps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC851174691DA0045854C /* ru_BE */,
+			);
+			name = Lockapps.strings;
+			sourceTree = "<group>";
+		};
+		C91AC852174691DA0045854C /* Main theme.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC853174691DA0045854C /* ru_BE */,
+			);
+			name = "Main theme.strings";
+			sourceTree = "<group>";
+		};
+		C91AC854174691DA0045854C /* RestoreTiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC855174691DA0045854C /* ru_BE */,
+			);
+			name = RestoreTiles.strings;
+			sourceTree = "<group>";
+		};
+		C91AC856174691DA0045854C /* strifeprefs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC857174691DA0045854C /* ru_BE */,
+			);
+			name = strifeprefs.strings;
+			sourceTree = "<group>";
+		};
+		C91AC858174691DA0045854C /* Tiles.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC859174691DA0045854C /* ru_BE */,
+			);
+			name = Tiles.strings;
+			sourceTree = "<group>";
+		};
+		C91AC85A174691DA0045854C /* zamulini */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91AC85B174691DA0045854C /* ru_BE */,
+			);
+			name = zamulini;
+			sourceTree = "<group>";
+		};
 		C95E030E173AF153004AFB2D /* backup.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -510,78 +663,6 @@
 				C9920AA21739A26700BF0C07 /* pt */,
 			);
 			name = portuguese;
-			sourceTree = "<group>";
-		};
-		C99E197E173F05C70026D219 /* backup.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E197F173F05C70026D219 /* ru */,
-			);
-			name = backup.strings;
-			sourceTree = "<group>";
-		};
-		C99E1980173F05C70026D219 /* belarusian */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E1981173F05C70026D219 /* ru */,
-			);
-			name = belarusian;
-			sourceTree = "<group>";
-		};
-		C99E1982173F05C70026D219 /* Extras.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E1983173F05C70026D219 /* ru */,
-			);
-			name = Extras.strings;
-			sourceTree = "<group>";
-		};
-		C99E1984173F05C70026D219 /* Lockapps.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E1985173F05C70026D219 /* ru */,
-			);
-			name = Lockapps.strings;
-			sourceTree = "<group>";
-		};
-		C99E1986173F05C70026D219 /* Main theme.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E1987173F05C70026D219 /* ru */,
-			);
-			name = "Main theme.strings";
-			sourceTree = "<group>";
-		};
-		C99E1988173F05C70026D219 /* RestoreTiles.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E1989173F05C70026D219 /* ru */,
-			);
-			name = RestoreTiles.strings;
-			sourceTree = "<group>";
-		};
-		C99E198A173F05C70026D219 /* strifeprefs.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E198B173F05C70026D219 /* ru */,
-			);
-			name = strifeprefs.strings;
-			sourceTree = "<group>";
-		};
-		C99E198C173F05C70026D219 /* Tiles.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E198D173F05C70026D219 /* ru */,
-			);
-			name = Tiles.strings;
-			sourceTree = "<group>";
-		};
-		C99E198E173F05C70026D219 /* zamulini */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C99E198F173F05C70026D219 /* ru */,
-			);
-			name = zamulini;
 			sourceTree = "<group>";
 		};
 		C9AF622517380E2C00A6A709 /* backup.strings */ = {

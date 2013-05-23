@@ -1,0 +1,14 @@
+/* 
+  RestoreTiles.strings
+  strifeprefs
+
+  Created by Matt Clarke on 05/05/2013.
+
+*/
+
+"TITLE" = "Rétablissez les carreaux";
+"FIRST_FOOTER" = "Choisissez les carreaux qui vous voulez rétablir, puis tappez le bouton: Rétablissez les carreaux choisis";
+"SELECT_TILES" = "Choisissez les Carreaux";
+"RESPRING_FOOTER" = "Respring aprés vos carreaux ont été rétablis.";
+"RESTORE_TILES" = "Rétablissez les carreax choisis";
+"MANUAL_RESTORE_INFO" = "Pour rétablir un carreau díune autre sauvegarde, mettez le fichier du carreau dans: /var/mobile/Library/Preferences/strifeprefs/Tiles/";

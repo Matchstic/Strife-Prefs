@@ -12,11 +12,12 @@
 
 @interface strifeprefsController : PSListController
 -(id)specifiers;
--(void)viewDidAppear:(BOOL)arg1;
+-(void)viewWillAppear:(BOOL)view;
 -(void)setLockscreenOn:(id)value specifier:(id)specifier;
 -(IBAction) respring:(id)sender;
 -(BOOL)getLockscreenOn;
 -(NSString *)tileColour;
+-(void)setPictureTile:(id)value specifier:(id)specifier;
 
 @end
 

@@ -47,7 +47,7 @@
 /*
 * RestoreTileCell.m
 *
-* edited by matchstick
+* edited by matchstic
 */
 
 #import <RestoreTileCell.h>

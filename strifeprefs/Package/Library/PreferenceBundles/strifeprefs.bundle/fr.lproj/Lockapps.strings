@@ -1,0 +1,17 @@
+/* 
+  Lockapps.strings
+  strifeprefs
+
+  Created by Matt Clarke on 05/05/2013.
+
+*/
+
+"TITLE" = "Notifications";
+"MAIN_FOOTER" = "Configurez les notifications de quelle app sont montrées sur le Verrouillage écran.";
+"SYSTEM_APP_TITLE" = "Applications du Système";
+"USER_APP_TITLE" = "Applications de l'utilisateur";
+"LockApp1" = "App de Verrouillage 1";
+"LockApp2" = "App de Verrouillage 2";
+"LockApp3" = "App de Verrouillage 3";
+"LockApp4" = "App de Verrouillage 4";
+"LockApp5" = "App de Verrouillage 5";

@@ -25,6 +25,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 @implementation strifeprefsController
 // Load up the cells from the plist
 -(id)specifiers {
+    NSLog(@"Loading specifiers");
 	if(_specifiers == nil) {
         _specifiers = [[self loadSpecifiersFromPlistName:@"strifeprefs" target:self] retain];
         _specifiers = [self localizedSpecifiersForSpecifiers:_specifiers];
@@ -51,7 +52,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
 };
 
 // Hack to display correct value on the lockscreen enabled cell
--(void)viewDidAppear:(BOOL)arg1 {
+-(void)viewWillAppear:(BOOL)view {
     // Load correct value
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsFile];
     BOOL lockscreen = [[dict objectForKey:@"ShowsLockscreen"] boolValue];
@@ -64,6 +65,14 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     [plistDict release];
     
     [self reloadSpecifiers];
+    
+    // Check whether switchmonkey's pictures folder is enabled or not
+    NSFileManager *file = [NSFileManager defaultManager];
+    BOOL fileExists = [file fileExistsAtPath:@"/DreamBoard/Strife/Resources/Tiles/com.apple.mobileslideshow/switchmonkey.enabled"];
+    if (!fileExists) {
+        [self removeSpecifier:[_specifiers objectAtIndex:4] animated:NO];
+    }
+    [file release];
 }
 
 // Correctly set ShowsLockscreen in the Info.plist
@@ -105,6 +114,7 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     
     // There must be a better way acheive this!
     if ([colour isEqualToString:@"A4C400"]) {
+        colName = [[self bundle] localizedStringForKey:@"LIME" value:@"Lime" table:@"Tiles"];
         colour = colName;
     } else if ([colour isEqualToString:@"60A917"]) {
         colName = [[self bundle] localizedStringForKey:@"GREEN" value:@"Green" table:@"Tiles"];
@@ -172,6 +182,58 @@ static NSString *settingsFile = @"/var/mobile/Library/DreamBoard/Strife/Info.pli
     return colour;
 }
 
+// Backend for setting switchmonkey's picture tile
+-(void)setPictureTile:(id)value specifier:(id)specifier {
+    NSLog(@"Value for switchmonkey's cell is %@", value);
+    
+    [self setPreferenceValue:value specifier:specifier];
+    
+    NSFileManager *file = [NSFileManager defaultManager];
+    
+    // However! We can support the use of multiple folders by utilising the specifier key. We'll set it to be "switchmonkey-<folder>", so remove this prefix from the string, and append to file path.
+    
+    NSString *filePath = @"/DreamBoard/Strife/Resources/Tiles/com.apple.mobileslideshow/";
+    NSError *error;
+    
+    // Let's get a list of all the files in the directory, minus those that should be there! This will let us have unlimited numbers of images in the folders.
+    NSArray *files = [file contentsOfDirectoryAtPath:filePath error:&error];
+    NSMutableArray *filesToRemoveMkTwo = (NSMutableArray *)files;
+    
+    // Now, to allow for more colours to not be obliterated, we need to go through the directory, and remove all the subdirectories from filesToRemoveMkTwo
+    
+    [filesToRemoveMkTwo removeObject:@"Blue"];
+    [filesToRemoveMkTwo removeObject:@"Grey"];
+    [filesToRemoveMkTwo removeObject:@"AppListTile@2x.png"];
+    [filesToRemoveMkTwo removeObject:@"AppListTile.png"];
+    [filesToRemoveMkTwo removeObject:@"overlay.png"];
+    [filesToRemoveMkTwo removeObject:@"Tile.plist"];
+    [filesToRemoveMkTwo removeObject:@"switchmonkey.enabled"];
+    
+    // Wait! If we can grab from the preference being set which folder to use, we can support ANY colour!
+    
+    // Remove the unneeded files in the main folder, and replace with new
+    
+    // Make sure that even if the files are uploaded as root, they'll still be deletable
+    setuid(0);
+    system("chown -R mobile '/var/mobile/Library/DreamBoard/Strife/Resources/Tiles/com.apple.mobileslideshow'");
+    
+    // Delete the files in the main directory
+    for (NSString *filename in filesToRemoveMkTwo) {
+        [file removeItemAtPath:[filePath stringByAppendingString:filename] error:&error];
+    }
+    
+    // Now, we can copy the appropriate files across
+    
+    // Enumerate through all the files in the folder, and copy across
+    NSString *path = [filePath stringByAppendingString:value];
+    NSArray *filesToCopy = [file contentsOfDirectoryAtPath:path error:&error];
+    for (NSString *filename in filesToCopy) {
+        NSString *copyPath = [path stringByAppendingString:@"/"];
+        [file copyItemAtPath:[copyPath stringByAppendingString:filename] toPath:[filePath stringByAppendingString:filename] error:&error];
+    }
+    
+    // Think we're done now!
+}
 @end
 
 @implementation tilePageController

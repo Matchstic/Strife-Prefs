@@ -1,0 +1,17 @@
+/* 
+  backup.strings
+  strifeprefs
+
+  Created by Matt Clarke on 05/05/2013.
+
+*/
+
+"TITLE" = "Sauvegardez/Rétablissez";
+"PREF_LABEL" = "Préférences";
+"PREF_FOOTER" = "Sauvegardez vos préférence avant de mettre jour Strife";
+"BACKUP_PREFS_BUTTON" = "Sauvegardez vos préférences";
+"RESTORE_PREFS_BUTTON" = "Rétablir vos préférences";
+"TILES_LABEL" = "Carreaux";
+"TILES_FOOTER" = "Sauvegardez tous les carreaux donc une mise jour de Strife ne supprimera pas vos changements.";
+"BACKUP_TILES_BUTTON" = "Sauvegardez les carreaux";
+"RESTORE_TILES_BUTTON" = " Rétablir les carreaux";

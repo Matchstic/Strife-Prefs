@@ -1,0 +1,33 @@
+/*
+ Tiles.strings
+ strifeprefs
+ 
+ Created by Matt Clarke on 05/05/2013.
+ 
+*/
+
+"TITLE" = "Couleur des carreaux";
+"FOOTER" = "Ces couleurs sont les couleurs par défaut de Windows Phone 8.";
+"COLOURS" = "Couleurs";
+"LIME" = "Vert Citron";
+"GREEN" = "Vert";
+"EMERALD" = "Verte émeraude";
+"TEAL" = "Bleu Sarcelle";
+"CYAN" = "Cyan";
+"COBALT" = "Bleu Cobalt";
+"INDIGO" = "Indigo";
+"VIOLET" = "Violet";
+"PINK" = "Rose";
+"MAGENTA" = "Magenta";
+"CRIMSON" = "Crimsoisi";
+"RED" = "Rouge";
+"ORANGE" = "Orange";
+"AMBER" = "Ambre";
+"YELLOW" = "Jaune";
+"BROWN" = "Brun";
+"OLIVE" = "Vert Olive";
+"STEEL" = "Gris";
+"MAUVE" = "Mauve";
+"TAUPE" = "Taupe";
+"TILE_OR_HEX" = "Choisissez une couleur des carreaux, ou spécifiez une valeur hexadécimale personnalisé";
+"CUSTOM_HEX_CELL" = "Couleur hexadécimal personnalisé:";

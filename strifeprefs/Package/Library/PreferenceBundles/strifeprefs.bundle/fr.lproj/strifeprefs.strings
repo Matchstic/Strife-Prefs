@@ -1,0 +1,21 @@
+﻿/* 
+  strifeprefs.strings
+  strifeprefs
+
+  Created by Matt Clarke on 05/05/2013.
+
+*/
+
+"RESPRING_FOOTER" = "Respring pour que les changements aient lieu.";
+"THEMING" = "Thématisation";
+"MAIN_THEME_FOOTER" = "Choisissez la couleur qui est montré derrière les carreaux.";
+"MAIN_THEME" = "Thème Principal";
+"DARK" = "Sombre";
+"LIGHT" = "Clair";
+"TILE_COLOUR" = "Couleur des carreaux";
+"LOCKSCREEN" = "Verouillage écran";
+"SHOW_LOCKSCREEN" = "Permis";
+"NOTIFS" = "Notifications";
+"BACKUP_RESTORE" = "Sauvegardez/Rétablissez";
+"CREDITS" = "Strife © EndFinity, préférences par Matchstic, traduction par Daniel Walker";
+"RESPRING" = "Respring";

@@ -8,12 +8,7 @@ fi
 
 echo " "
 echo "In this version:"
-echo "- Ability to backup and restore tiles"
-echo "- Backups can now be synced with iTunes/iCloud"
-echo "- Support for more languages! Includes:"
-echo "    - Portuguese (by guimenez)"
-echo "    - Belarusian (by zamulini)"
-echo "    - Polish (by MikelThief)"
+echo "- Setting for Switchmonkey's picture tile (only shows if it is installed)"
 echo " "
 echo "PM me (or email me at mclarke0805@gmail.com) if you find any bugs, have a feature suggestion, or want to contribute more translations."
 echo " "
